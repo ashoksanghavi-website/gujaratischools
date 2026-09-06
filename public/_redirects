@@ -1,0 +1,5 @@
+# Netlify / Cloudflare Pages. Documents and assets are served as files;
+# every other path falls through to the SPA so deep links survive a refresh.
+/documents/*   /documents/:splat   200
+/images/*      /images/:splat      200
+/*             /index.html         200

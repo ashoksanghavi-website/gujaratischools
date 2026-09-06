@@ -1,0 +1,14 @@
+{
+  "name": "Consortium of Gujarati Schools",
+  "short_name": "CGS",
+  "description": "Past papers, training materials and exam guidance for Gujarati teachers in the UK.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFFDF9",
+  "theme_color": "#FFFDF9",
+  "lang": "en-GB",
+  "icons": [
+    { "src": "/favicon/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/favicon/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}

@@ -1,0 +1,116 @@
+/* ============================================================
+   THE EXERCISE BOOK — design tokens
+   Single source of truth. No hardcoded colour, spacing, radius,
+   shadow, duration or easing anywhere else in the codebase.
+   Palette reconciled against the real CGS logo (indigo/plum
+   wordmark, gold ring) — see docs/02-design-plan.md.
+   ============================================================ */
+
+:root {
+  /* ---------- Colour: surfaces ---------- */
+  --paper: #FFFDF9;         /* page background — warm white, not cream */
+  --paper-raised: #FFFFFF;  /* cards, raised surfaces */
+  --paper-tint: #F4F7F4;    /* alternate sections, faint green cast */
+
+  /* ---------- Colour: ink ---------- */
+  --ink: #16234A;           /* headings + body — deep indigo, never black */
+  --ink-soft: #4C5872;      /* secondary text, captions, meta */
+
+  /* ---------- Colour: interactive ---------- */
+  --indigo: #23407F;        /* primary interactive, links, nav, focus */
+  --indigo-deep: #182D5C;   /* hover / pressed */
+
+  /* ---------- Colour: accents ---------- */
+  --marigold: #F2A61C;      /* primary accent, active tabs, highlights */
+  --marigold-soft: #FDEFD2; /* tinted backgrounds, selected chips */
+  --leaf: #27684C;          /* secondary accent, success, parents */
+  --leaf-soft: #E3F1EA;
+  --kumkum: #B2223C;        /* rare emphasis, required, errors */
+
+  /* ---------- Colour: lines ---------- */
+  --margin-rule: #E9A7B0;   /* the exercise-book margin line — signature */
+  --rule: #DEE4EF;          /* ruled lines, borders, dividers */
+  --gold-hair: #C9A24B;     /* DECORATIVE hairlines only — 2.4:1, never text */
+  --gold-hair-text: #7A5C1C; /* the readable companion, for Leaders labels */
+  --marigold-deep: #C07E04; /* thin state indicators that must reach 3:1 */
+  --rule-strong: #7E8EAE;   /* borders of interactive controls (WCAG 1.4.11) */
+
+  /* ---------- Audience identity ---------- */
+  --aud-teachers: var(--indigo);
+  --aud-leaders: var(--gold-hair-text);
+  --aud-parents: var(--leaf);
+
+  /* ---------- Typography: families ---------- */
+  --font-display: "Bricolage Grotesque Variable", "Bricolage Grotesque",
+    "Helvetica Neue", Arial, sans-serif;
+  --font-text: "Inter Variable", Inter, system-ui, -apple-system, sans-serif;
+  --font-gu: "Noto Sans Gujarati", "Mukta Vaani", "Shruti", sans-serif;
+
+  /* ---------- Typography: fluid scale ---------- */
+  --fs-display: clamp(2.6rem, 5.5vw, 4.75rem);
+  --fs-h1: clamp(2.1rem, 4vw, 3.25rem);
+  --fs-h2: clamp(1.65rem, 2.8vw, 2.375rem);
+  --fs-h3: clamp(1.3rem, 1.9vw, 1.625rem);
+  --fs-lead: clamp(1.125rem, 1.5vw, 1.375rem);
+  --fs-body: 1.125rem;   /* 18px */
+  --fs-small: 1rem;      /* 16px — never smaller for body-adjacent text */
+  --fs-micro: 0.875rem;  /* badges and file meta only */
+
+  --lh-tight: 1.05;
+  --lh-snug: 1.2;
+  --lh-body: 1.65;
+  --measure: 70ch;
+
+  /* ---------- Spacing scale (8px baseline) ---------- */
+  --s-1: 4px;
+  --s-2: 8px;
+  --s-3: 12px;
+  --s-4: 16px;
+  --s-5: 24px;
+  --s-6: 32px;
+  --s-7: 48px;
+  --s-8: 64px;
+  --s-9: 96px;
+  --s-10: 128px;
+
+  --section-y: clamp(4rem, 8vw, 7rem);
+  --gutter: clamp(16px, 2vw, 32px);
+  --content-max: 1200px;
+  --baseline: 8px;
+
+  /* ---------- Radius — meaningful, not uniform ---------- */
+  --r-sm: 8px;    /* chips, inputs */
+  --r-md: 14px;   /* cards */
+  --r-lg: 22px;   /* feature panels */
+  --r-pill: 999px;
+
+  /* ---------- Elevation — warm, indigo-tinted, never grey ---------- */
+  --e-1: 0 1px 2px rgba(22, 35, 74, 0.05), 0 4px 12px -4px rgba(22, 35, 74, 0.08);
+  --e-2: 0 2px 6px rgba(22, 35, 74, 0.07), 0 14px 28px -12px rgba(22, 35, 74, 0.16);
+  --e-3: 0 8px 20px rgba(22, 35, 74, 0.10), 0 32px 64px -24px rgba(22, 35, 74, 0.24);
+
+  /* ---------- Motion ---------- */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --t-fast: 180ms;
+  --t-base: 320ms;
+  --t-slow: 520ms;
+
+  /* ---------- Focus ---------- */
+  --focus-ring: 2px solid var(--indigo);
+  --focus-offset: 2px;
+
+  /* ---------- Layout chrome ---------- */
+  --header-h: 72px;
+  --header-h-tall: 116px;
+  --bottombar-h: 60px;
+}
+
+/* Reduced motion: collapse durations to near-zero but never hide content. */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --t-fast: 1ms;
+    --t-base: 1ms;
+    --t-slow: 1ms;
+  }
+}

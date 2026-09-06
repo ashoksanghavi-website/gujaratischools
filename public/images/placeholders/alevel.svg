@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-label="A-Level">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2f4fa8"/><stop offset="1" stop-color="#4a6fc0"/>
+    </linearGradient>
+    <pattern id="d" width="46" height="46" patternUnits="userSpaceOnUse">
+      <circle cx="4" cy="4" r="2.2" fill="#ffffff" opacity="0.10"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="800" fill="url(#g)"/>
+  <rect width="1200" height="800" fill="url(#d)"/>
+  <g transform="translate(600 340)" opacity="0.9">
+    <g transform="rotate(10)">
+      <path d="M0 -120 L120 0 L0 120 L-120 0 Z" fill="#ffffff" opacity="0.14"/>
+      <path d="M0 -120 L120 0 L0 0 Z" fill="#ffffff" opacity="0.20"/>
+      <path d="M0 120 L-120 0 L0 0 Z" fill="#ffffff" opacity="0.10"/>
+      <path d="M0 -120 L0 120 M-120 0 L120 0" stroke="#ffffff" stroke-width="2" opacity="0.35"/>
+    </g>
+  </g>
+  <text x="600" y="600" font-family="Georgia, serif" font-size="72" fill="#ffffff" text-anchor="middle" opacity="0.96">A-Level</text>
+  <text x="600" y="660" font-family="Inter, sans-serif" font-size="26" letter-spacing="6" fill="#ffffff" text-anchor="middle" opacity="0.7">CONSORTIUM OF GUJARATI SCHOOLS</text>
+</svg>
