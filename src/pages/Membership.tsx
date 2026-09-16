@@ -63,7 +63,7 @@ export default function Membership() {
                 >
                   {i + 1}
                 </span>
-                <p className="mt-3 text-ink">{s}</p>
+                <p className="mt-3 break-words text-ink">{s}</p>
               </li>
             ))}
           </ol>

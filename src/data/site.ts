@@ -143,7 +143,7 @@ export const membership = {
   steps: [
     "Download and complete the appropriate membership form.",
     "Save it with a new name.",
-    `Email the completed form to ${contact.membershipContact} at ${contact.membershipEmail}.`,
+    `Email the completed form to ${contact.membershipContact}, our membership secretary (address below).`,
     "Please make the subscription payment online too, if possible.",
   ],
   forms: [
