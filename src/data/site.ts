@@ -271,4 +271,7 @@ export const forms = {
   endpoint: "",
   schoolTo: contact.email,
   teachTo: contact.membershipEmail,
+  membershipTo: contact.membershipEmail,
+  /* Shown to people who apply online, and the reason online is encouraged. */
+  responseNote: "We aim to get back to you within 12 hours.",
 };

@@ -1,11 +1,34 @@
-import { membership, contact, about, social } from "@/data/site";
+import { useState } from "react";
+import { membership, contact, about, social, forms } from "@/data/site";
 import { PageHero } from "@/components/ui/PageHero";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { ButtonLink } from "@/components/ui/Button";
 import { IconDownload, IconMail } from "@/components/ui/Icons";
+import { EnquiryModal, type EnquiryModalConfig } from "@/components/ui/EnquiryModal";
 import { Seo } from "@/lib/seo";
 
+/* The online-application config for each form. Organisation and School
+   forms ask for the organisation/school name; the individual form does not. */
+function onlineConfig(title: string): EnquiryModalConfig {
+  const base = {
+    kind: "membership" as const,
+    sendTo: forms.membershipTo,
+    responseNote: forms.responseNote,
+    subtitle: "Apply online",
+    intro: "Fill this in and send it, no download needed. " + forms.responseNote,
+  };
+  if (/organisation/i.test(title)) {
+    return { ...base, title: "Organisation membership", subject: "Apply: Organisation Membership", orgLabel: "Organisation name" };
+  }
+  if (/school information/i.test(title)) {
+    return { ...base, title: "School information", subject: "School Information Form", orgLabel: "School name" };
+  }
+  return { ...base, title: "Individual membership", subject: "Apply: Individual Membership" };
+}
+
 export default function Membership() {
+  const [active, setActive] = useState<EnquiryModalConfig | null>(null);
+
   return (
     <>
       <Seo
@@ -26,7 +49,7 @@ export default function Membership() {
           numbering here carries real information. */}
       <section className="section">
         <div className="container-cgs">
-          <SectionHeader title="How to join" intro="Four steps, and the whole thing is done by email." />
+          <SectionHeader title="How to join" intro="The quickest way is to apply online below. If you prefer paper, here is the download route." />
           <ol className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {membership.steps.map((s, i) => (
               <li
@@ -47,29 +70,50 @@ export default function Membership() {
         </div>
       </section>
 
-      {/* Forms */}
+      {/* Forms — two ways to apply: online (encouraged) or download */}
       <section className="section border-y border-rule bg-paper-tint" aria-labelledby="forms">
         <div className="container-cgs">
           <SectionHeader
             id="forms"
             title="The forms"
-            intro="Each one is a fillable PDF. Open it, complete your details, and save it with a new name before you send it."
+            intro="Two ways to join: fill in a short form online, or download the PDF and email it back."
           />
+
+          {/* The recommended path, stated up front */}
+          <div className="mb-6 flex items-start gap-3 rounded-lg border border-rule bg-marigold-soft p-4">
+            <span aria-hidden="true" className="mt-0.5 text-[1.25rem] leading-none">⚡</span>
+            <p className="text-small text-ink">
+              <strong className="font-semibold">Applying online is the fastest way to join.</strong>{" "}
+              {forms.responseNote} A downloaded form is fine too, but online reaches us straight away.
+            </p>
+          </div>
+
           <ul className="grid gap-4 md:grid-cols-3">
             {membership.forms.map((f) => (
-              <li key={f.fileUrl}>
-                <a
-                  href={f.fileUrl}
-                  download
-                  className="group flex h-full flex-col rounded-md border border-rule bg-paper-raised p-5 shadow-e1 transition-transform duration-base ease-out hover:-translate-y-1 motion-reduce:hover:translate-y-0"
-                >
-                  <h3 className="text-h3 transition-colors group-hover:text-indigo">{f.title}</h3>
-                  <p className="mt-2 text-small text-ink-soft">{f.description}</p>
-                  <span className="mt-auto flex items-center gap-2 pt-5 font-semibold text-indigo">
-                    <IconDownload size={18} />
+              <li
+                key={f.fileUrl}
+                className="flex h-full flex-col rounded-md border border-rule bg-paper-raised p-5 shadow-e1"
+              >
+                <h3 className="text-h3">{f.title}</h3>
+                <p className="mt-2 text-small text-ink-soft">{f.description}</p>
+
+                <div className="mt-auto flex flex-col gap-3 pt-5">
+                  <button
+                    type="button"
+                    onClick={() => setActive(onlineConfig(f.title))}
+                    className="inline-flex min-h-[48px] w-full items-center justify-center gap-2 rounded-pill bg-marigold px-5 font-semibold text-ink transition-colors duration-fast hover:bg-[color-mix(in_srgb,var(--marigold)_88%,var(--ink))]"
+                  >
+                    Apply online
+                  </button>
+                  <a
+                    href={f.fileUrl}
+                    download
+                    className="inline-flex min-h-[44px] w-full items-center justify-center gap-2 rounded-pill border border-rule-strong px-5 text-small font-semibold text-indigo transition-colors duration-fast hover:border-indigo"
+                  >
+                    <IconDownload size={16} />
                     Download the form
-                  </span>
-                </a>
+                  </a>
+                </div>
               </li>
             ))}
           </ul>
@@ -126,6 +170,8 @@ export default function Membership() {
           </div>
         </div>
       </section>
+
+      <EnquiryModal config={active} onClose={() => setActive(null)} />
     </>
   );
 }

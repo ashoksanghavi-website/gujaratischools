@@ -5,8 +5,8 @@ import { IconCheck } from "@/components/ui/Icons";
 import { forms } from "@/data/site";
 
 /* ============================================================
-   EnquiryForm, a short, low-friction "get in touch" form used
-   for school enquiries and teacher applications.
+   EnquiryForm, a short, low-friction form used for school
+   enquiries, teacher applications and membership applications.
 
    If a form endpoint is configured (src/data/site.ts → forms.endpoint)
    it POSTs there and confirms in place, a true submission. If not, it
@@ -18,15 +18,24 @@ export function EnquiryForm({
   subject,
   sendTo,
   kind,
+  orgLabel,
+  responseNote,
+  submitLabel,
   onSubmitted,
   compact = false,
 }: {
   subject: string;
   sendTo: string;
-  kind: "school" | "teach";
+  kind: "school" | "teach" | "membership";
+  /** When set, an extra required field (e.g. "Organisation name") is shown first. */
+  orgLabel?: string;
+  /** Shown in the success confirmation, e.g. the 12-hour response promise. */
+  responseNote?: string;
+  submitLabel?: string;
   onSubmitted?: () => void;
   compact?: boolean;
 }) {
+  const [org, setOrg] = useState("");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
@@ -37,6 +46,7 @@ export function EnquiryForm({
   const [sending, setSending] = useState(false);
 
   const errors = {
+    org: orgLabel && !org.trim() ? `Please enter your ${orgLabel.toLowerCase()}.` : "",
     name: !name.trim() ? "Please tell us your name." : "",
     email: !email.trim()
       ? "We need an email address to reply to."
@@ -44,14 +54,20 @@ export function EnquiryForm({
         ? "That email address doesn't look right."
         : "",
   };
-  const valid = !errors.name && !errors.email;
+  const valid = !errors.org && !errors.name && !errors.email;
+
+  const intro =
+    kind === "teach"
+      ? "I'd like to find out about teaching Gujarati with CGS."
+      : kind === "membership"
+        ? `I'd like to apply: ${subject.replace(/^Apply: /, "")}`
+        : `I'd like to enquire about: ${subject.replace(/^Enquiry: /, "")}`;
 
   const bodyText = () => {
     const lines = [
-      kind === "teach"
-        ? "I'd like to find out about teaching Gujarati with CGS."
-        : `I'd like to enquire about: ${subject.replace(/^Enquiry: /, "")}`,
+      intro,
       "",
+      orgLabel ? `${orgLabel}: ${org}` : null,
       `Name: ${name}`,
       `Email: ${email}`,
       phone ? `Phone: ${phone}` : null,
@@ -76,6 +92,7 @@ export function EnquiryForm({
           body: (() => {
             const fd = new FormData();
             fd.append("_subject", subject);
+            if (orgLabel) fd.append(orgLabel.toLowerCase().replace(/\s+/g, "_"), org);
             fd.append("name", name);
             fd.append("email", email);
             if (phone) fd.append("phone", phone);
@@ -103,6 +120,9 @@ export function EnquiryForm({
     onSubmitted?.();
   };
 
+  const noun = kind === "membership" ? "application" : "enquiry";
+  const note = responseNote || "We'll get back to you soon.";
+
   if (done) {
     return (
       <div
@@ -115,12 +135,12 @@ export function EnquiryForm({
         </span>
         <div>
           <p className="font-semibold text-ink">
-            {done === "sent" ? "Thank you, your enquiry has been sent" : "Your enquiry is ready to send"}
+            {done === "sent" ? `Thank you, your ${noun} has been sent` : `Your ${noun} is ready to send`}
           </p>
           <p className="mt-1 text-small text-ink-soft">
             {done === "sent"
-              ? "Someone from CGS will get back to you soon."
-              : "We opened your email app with the details filled in. Press send and we'll get back to you soon."}
+              ? note
+              : `We opened your email app with the details filled in. Press send and ${note.charAt(0).toLowerCase() + note.slice(1)}`}
           </p>
         </div>
       </div>
@@ -129,10 +149,20 @@ export function EnquiryForm({
 
   return (
     <form onSubmit={onSubmit} noValidate className="flex flex-col gap-2">
+      {orgLabel && (
+        <Field
+          name="org"
+          label={orgLabel}
+          required
+          value={org}
+          onChange={setOrg}
+          error={submitted ? errors.org : ""}
+        />
+      )}
       <div className={compact ? "grid gap-2 sm:grid-cols-2" : "grid gap-2"}>
         <Field
           name="name"
-          label="Your name"
+          label={kind === "membership" && orgLabel ? "Contact name" : "Your name"}
           required
           value={name}
           onChange={setName}
@@ -159,14 +189,20 @@ export function EnquiryForm({
         />
         <Field
           name="area"
-          label={kind === "teach" ? "Your town or area (optional)" : "Your town or area (optional)"}
+          label="Your town or area (optional)"
           value={area}
           onChange={setArea}
         />
       </div>
       <Field
         name="message"
-        label={kind === "teach" ? "Anything you'd like us to know? (optional)" : "Your message (optional)"}
+        label={
+          kind === "teach"
+            ? "Anything you'd like us to know? (optional)"
+            : kind === "membership"
+              ? "Anything you'd like to add? (optional)"
+              : "Your message (optional)"
+        }
         textarea
         rows={compact ? 3 : 4}
         value={message}
@@ -174,11 +210,13 @@ export function EnquiryForm({
         placeholder={
           kind === "teach"
             ? "e.g. I speak Gujarati at home and would love to help children learn."
-            : "e.g. I'm looking for a class for my 7-year-old."
+            : kind === "membership"
+              ? "e.g. how many children, when you'd like to start, any questions."
+              : "e.g. I'm looking for a class for my 7-year-old."
         }
       />
       <Button type="submit" size="lg" className="mt-2 self-start" disabled={sending}>
-        {sending ? "Sending…" : kind === "teach" ? "Send my details" : "Send enquiry"}
+        {sending ? "Sending…" : submitLabel || (kind === "membership" ? "Send my application" : kind === "teach" ? "Send my details" : "Send enquiry")}
       </Button>
     </form>
   );
