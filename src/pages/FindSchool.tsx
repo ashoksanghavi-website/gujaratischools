@@ -1,53 +1,96 @@
 import { useMemo, useState } from "react";
-import { schools, schoolRegions, schoolTownCount, type School } from "@/lib/content";
+import {
+  schools,
+  schoolRegions,
+  schoolTownCount,
+  type School,
+} from "@/lib/content";
 import { PageHero } from "@/components/ui/PageHero";
 import { Chip } from "@/components/ui/Badge";
 import { Button, ButtonLink } from "@/components/ui/Button";
 import { EmptyState } from "@/components/ui/SectionHeader";
-import { IconSearch, IconClose, IconMail, IconPhone } from "@/components/ui/Icons";
+import { IconSearch, IconClose, IconMail, IconPhone, IconSchoolPin } from "@/components/ui/Icons";
 import { SchoolEnquiryModal } from "@/components/resources/SchoolEnquiryModal";
 import { contact } from "@/data/site";
 import { Seo } from "@/lib/seo";
 
 /* ============================================================
    Find a Gujarati school.
-   The growth engine for new families: a real, searchable directory
-   of member schools across the UK, grouped by region. A parent
-   types their town and finds their nearest class. Every school is
+   The growth engine for new families: a real directory of member
+   schools across the UK. Shown as one dense grid so it always
+   reads as a full, living network — region is a colour-coded tag
+   and a filter, not a set of half-empty sections. Every school is
    a markdown file the committee can add to or correct.
    ============================================================ */
 
+/* A quiet colour per region — helps the eye group the grid without
+   splitting it into sparse sections. */
+const regionAccent: Record<string, string> = {
+  "London & the South East": "var(--indigo)",
+  "East of England": "var(--leaf)",
+  "The Midlands": "var(--gold-hair-text)",
+  "The North West": "var(--kumkum)",
+  "Other member schools": "var(--ink-soft)",
+};
+const accentFor = (r: string) => regionAccent[r] ?? "var(--ink-soft)";
+const regionIndex = (r: string) => {
+  const i = schoolRegions.indexOf(r);
+  return i < 0 ? 99 : i;
+};
+
 function SchoolCard({ s, onEnquire }: { s: School; onEnquire: (s: School) => void }) {
+  const accent = accentFor(s.region);
   return (
-    <li className="flex h-full flex-col rounded-md border border-rule bg-paper-raised p-5">
-      <h3 className="text-[1.0625rem] font-semibold leading-snug text-ink">{s.name}</h3>
-      {s.org && <p className="mt-0.5 text-small text-ink-soft">{s.org}</p>}
+    <li
+      className="group flex h-full flex-col overflow-hidden rounded-lg border border-rule bg-paper-raised shadow-e1 transition-transform duration-base ease-out hover:-translate-y-1 motion-reduce:hover:translate-y-0"
+      style={{ borderTopColor: accent, borderTopWidth: 3 }}
+    >
+      <div className="flex flex-1 flex-col p-5">
+        {/* region tag */}
+        <span className="mb-3 inline-flex w-fit items-center gap-1.5 text-micro font-medium text-ink-soft">
+          <span className="h-2 w-2 rounded-full" style={{ background: accent }} aria-hidden="true" />
+          {s.region}
+        </span>
 
-      {s.address ? (
-        <p className="mt-3 text-small text-ink-soft">
-          {s.address}
-          {s.postcode && (
-            <>
-              <br />
-              <span className="tnum font-medium text-ink">{s.postcode}</span>
-            </>
-          )}
-        </p>
-      ) : s.area ? (
-        <p className="mt-3 text-small text-ink-soft">{s.area}</p>
-      ) : null}
+        <h3 className="text-[1.0625rem] font-semibold leading-snug text-ink">{s.name}</h3>
+        {s.org && <p className="mt-0.5 text-small text-ink-soft">{s.org}</p>}
 
-      {s.when && <p className="mt-3 text-small text-ink-soft">🕑 {s.when}</p>}
-      {s.contact && <p className="mt-2 text-small text-ink-soft">{s.contact}</p>}
+        {s.address ? (
+          <p className="mt-3 flex gap-2 text-small text-ink-soft">
+            <span className="mt-0.5 shrink-0" style={{ color: accent }}>
+              <IconSchoolPin size={16} />
+            </span>
+            <span>
+              {s.address}
+              {s.postcode && (
+                <>
+                  {" "}
+                  <span className="tnum font-medium text-ink">{s.postcode}</span>
+                </>
+              )}
+            </span>
+          </p>
+        ) : s.area ? (
+          <p className="mt-3 flex items-center gap-2 text-small text-ink-soft">
+            <span className="shrink-0" style={{ color: accent }}>
+              <IconSchoolPin size={16} />
+            </span>
+            {s.area}
+          </p>
+        ) : null}
 
-      <div className="mt-auto pt-5">
-        <button
-          type="button"
-          onClick={() => onEnquire(s)}
-          className="inline-flex min-h-[44px] w-full items-center justify-center gap-2 rounded-pill bg-leaf px-4 text-small font-semibold text-white transition-colors duration-fast hover:brightness-95"
-        >
-          Enquire about this school
-        </button>
+        {s.when && <p className="mt-2 text-small text-ink-soft">🕑 {s.when}</p>}
+        {s.contact && <p className="mt-2 text-small text-ink-soft">{s.contact}</p>}
+
+        <div className="mt-auto pt-5">
+          <button
+            type="button"
+            onClick={() => onEnquire(s)}
+            className="inline-flex min-h-[44px] w-full items-center justify-center gap-2 rounded-pill bg-leaf px-4 text-small font-semibold text-white transition-colors duration-fast hover:brightness-95"
+          >
+            Enquire about this school
+          </button>
+        </div>
       </div>
     </li>
   );
@@ -60,23 +103,25 @@ export default function FindSchool() {
 
   const filtered = useMemo(() => {
     const term = q.trim().toLowerCase();
-    return schools.filter((s) => {
-      if (region && s.region !== region) return false;
-      if (term) {
-        const hay = `${s.name} ${s.org ?? ""} ${s.area ?? ""} ${s.address ?? ""} ${s.postcode ?? ""}`.toLowerCase();
-        if (!hay.includes(term)) return false;
-      }
-      return true;
-    });
+    return schools
+      .filter((s) => {
+        if (region && s.region !== region) return false;
+        if (term) {
+          const hay = `${s.name} ${s.org ?? ""} ${s.area ?? ""} ${s.address ?? ""} ${s.postcode ?? ""}`.toLowerCase();
+          if (!hay.includes(term)) return false;
+        }
+        return true;
+      })
+      // group visually by region, then alphabetically within it
+      .sort(
+        (a, b) => regionIndex(a.region) - regionIndex(b.region) || a.name.localeCompare(b.name)
+      );
   }, [q, region]);
 
-  const grouped = useMemo(
-    () =>
-      schoolRegions
-        .map((r) => ({ region: r, items: filtered.filter((s) => s.region === r) }))
-        .filter((g) => g.items.length > 0),
-    [filtered]
-  );
+  const clearAll = () => {
+    setQ("");
+    setRegion("");
+  };
 
   return (
     <>
@@ -88,11 +133,28 @@ export default function FindSchool() {
 
       <PageHero
         title="Find a Gujarati school near you"
-        intro={`Gujarati is taught at ${schools.length} schools across the UK, run by temples and community groups. Search for your town to find your nearest class.`}
+        intro="Gujarati is taught at schools across the UK, run by temples and community groups. Search for your town to find your nearest class."
         breadcrumb={[{ to: "/", label: "Home" }]}
         kakko="શા"
         tint
-      />
+      >
+        {/* premium stat strip */}
+        <dl className="mt-6 flex flex-wrap gap-x-8 gap-y-3">
+          {[
+            { n: schools.length, l: "member schools" },
+            { n: `${schoolTownCount}+`, l: "towns and areas" },
+            { n: schoolRegions.length, l: "regions" },
+          ].map((s) => (
+            <div key={s.l}>
+              <dt className="sr-only">{s.l}</dt>
+              <dd className="flex items-baseline gap-2">
+                <span className="tnum font-display text-[1.75rem] leading-none text-ink">{s.n}</span>
+                <span className="text-small text-ink-soft">{s.l}</span>
+              </dd>
+            </div>
+          ))}
+        </dl>
+      </PageHero>
 
       <div className="container-cgs py-8">
         {/* Search */}
@@ -121,24 +183,41 @@ export default function FindSchool() {
           )}
         </div>
 
-        {/* Region chips */}
+        {/* Region filter */}
         <div className="mt-4 flex flex-wrap items-center gap-2">
           <Chip active={!region} onClick={() => setRegion("")}>
             All regions
           </Chip>
           {schoolRegions.map((r) => (
-            <Chip key={r} active={region === r} onClick={() => setRegion(region === r ? "" : r)}>
+            <Chip
+              key={r}
+              active={region === r}
+              accent={accentFor(r)}
+              onClick={() => setRegion(region === r ? "" : r)}
+            >
               {r}
             </Chip>
           ))}
         </div>
 
-        <p className="tnum mt-4 text-small text-ink-soft" aria-live="polite">
-          <strong className="font-semibold text-ink">{filtered.length}</strong>{" "}
-          {filtered.length === 1 ? "school" : "schools"}
-          {schoolTownCount > 0 && !q && !region && ` across ${schoolTownCount} towns and areas`}
-        </p>
+        <div className="mt-4 flex flex-wrap items-center justify-between gap-3">
+          <p className="tnum text-small text-ink-soft" aria-live="polite">
+            <strong className="font-semibold text-ink">{filtered.length}</strong>{" "}
+            {filtered.length === 1 ? "school" : "schools"}
+            {region ? ` in ${region}` : schoolTownCount > 0 && !q ? ` across ${schoolTownCount} towns and areas` : ""}
+          </p>
+          {(q || region) && (
+            <button
+              type="button"
+              onClick={clearAll}
+              className="link-draw text-small font-semibold text-indigo"
+            >
+              Clear
+            </button>
+          )}
+        </div>
 
+        {/* One dense grid — always full, never sparse sections */}
         {filtered.length === 0 ? (
           <div className="mt-6">
             <EmptyState
@@ -154,13 +233,7 @@ export default function FindSchool() {
                   <ButtonLink to="/contact" variant="secondary">
                     Ask CGS to help
                   </ButtonLink>
-                  <Button
-                    variant="quiet"
-                    onClick={() => {
-                      setQ("");
-                      setRegion("");
-                    }}
-                  >
+                  <Button variant="quiet" onClick={clearAll}>
                     Clear search
                   </Button>
                 </>
@@ -168,24 +241,11 @@ export default function FindSchool() {
             />
           </div>
         ) : (
-          <div className="mt-6 flex flex-col gap-9">
-            {grouped.map((g) => (
-              <section key={g.region} aria-labelledby={`region-${g.region.replace(/[^a-z]/gi, "")}`}>
-                <h2
-                  id={`region-${g.region.replace(/[^a-z]/gi, "")}`}
-                  className="mb-4 flex items-baseline gap-3 text-h3"
-                >
-                  {g.region}
-                  <span className="tnum text-small font-normal text-ink-soft">{g.items.length}</span>
-                </h2>
-                <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-                  {g.items.map((s) => (
-                    <SchoolCard key={s.slug} s={s} onEnquire={setEnquiry} />
-                  ))}
-                </ul>
-              </section>
+          <ul className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {filtered.map((s) => (
+              <SchoolCard key={s.slug} s={s} onEnquire={setEnquiry} />
             ))}
-          </div>
+          </ul>
         )}
 
         {/* Help + growth CTAs */}
@@ -221,7 +281,7 @@ export default function FindSchool() {
             className="rounded-lg border border-rule bg-paper-raised p-6"
             style={{ borderLeftColor: "var(--indigo)", borderLeftWidth: 4 }}
           >
-            <h2 className="text-h3">Run a school? Add it to the map</h2>
+            <h2 className="text-h3">Run a school? Add it to the directory</h2>
             <p className="mt-2 text-ink-soft">
               If your Gujarati school isn't listed, or its details have changed, send them to us and
               we'll add your listing so families in your area can find you.
