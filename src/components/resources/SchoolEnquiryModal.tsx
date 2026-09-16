@@ -69,7 +69,7 @@ export function SchoolEnquiryModal({
 
   return createPortal(
     <div
-      className="fixed inset-0 z-overlay flex items-start justify-center overflow-y-auto bg-ink/50 p-4 pt-[6vh]"
+      className="fixed inset-0 z-overlay flex items-center justify-center bg-ink/50 p-4"
       onClick={(e) => {
         if (e.target === e.currentTarget) onClose();
       }}
@@ -79,10 +79,10 @@ export function SchoolEnquiryModal({
         role="dialog"
         aria-modal="true"
         aria-labelledby="enquiry-title"
-        className="w-full max-w-lg overflow-hidden rounded-lg border border-rule bg-paper shadow-e3"
+        className="flex max-h-[90dvh] w-full max-w-lg flex-col overflow-hidden rounded-lg border border-rule bg-paper shadow-e3"
         style={{ animation: "cgs-fade-up var(--t-fast) var(--ease-out) both" }}
       >
-        <div className="flex items-start justify-between gap-4 border-b border-rule bg-paper-tint px-5 py-4">
+        <div className="flex shrink-0 items-start justify-between gap-4 border-b border-rule bg-paper-tint px-5 py-4">
           <div>
             <p className="text-small text-ink-soft">Enquire about</p>
             <h2 id="enquiry-title" className="text-h3 leading-snug">
@@ -100,7 +100,7 @@ export function SchoolEnquiryModal({
           </button>
         </div>
 
-        <div className="p-5">
+        <div className="min-h-0 flex-1 overflow-y-auto overscroll-contain p-5">
           <p className="mb-4 text-small text-ink-soft">
             Send a quick enquiry and CGS will connect you with this school. No account needed.
           </p>
