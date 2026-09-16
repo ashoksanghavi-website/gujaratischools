@@ -25,7 +25,7 @@ export const redirects: Record<string, string> = {
   "/category/parents": "/parents",
   "/parents-2": "/parents",
   "/category/useful-resources-and-links": "/resources",
-  "/category/list-of-gujarati-schools": "/resources?audience=Parents&type=Useful+Links",
+  "/category/list-of-gujarati-schools": "/find-a-school",
 
   /* ---- committee ---- */
   "/committee": "/about/committee",
@@ -60,7 +60,7 @@ export const redirects: Record<string, string> = {
   "/importance-of-gujarati": "/resources?type=Press+Coverage",
   "/the-importance-of-gujarati": "/resources?type=Press+Coverage",
 
-  "/information-about-gujarati-schools": "/resources?audience=Parents&type=Useful+Links",
+  "/information-about-gujarati-schools": "/find-a-school",
   "/how-parents-can-help-infant-children": "/resources?audience=Parents",
   "/useful-links-for-gujarati-websites": "/resources?type=Useful+Links",
   "/resource-list-for-teaching-gujarati": "/resources?type=Teaching+Materials",
@@ -114,10 +114,8 @@ export const redirects: Record<string, string> = {
   "/past-papers-for-2018-session-ocr-gcse": "/resources?type=Past+Papers&exam=GCSE&year=2018",
 
   /* individual schools */
-  "/shree-ram-mandir-gujarati-classes-in-walsall-west-midlands":
-    "/resources?audience=Parents&type=Useful+Links",
-  "/shree-bharatiya-mandal-tameside-indian-association":
-    "/resources?audience=Parents&type=Useful+Links",
+  "/shree-ram-mandir-gujarati-classes-in-walsall-west-midlands": "/find-a-school",
+  "/shree-bharatiya-mandal-tameside-indian-association": "/find-a-school",
 
   /* gallery */
   "/gallery-2": "/gallery",

@@ -204,6 +204,67 @@ export const resources: Resource[] = Object.entries(resourceFiles)
   })
   .sort((a, b) => a.title.localeCompare(b.title, "en"));
 
+/* ---------- schools ----------
+   The CGS member-school directory. One markdown file per school in
+   content/schools/*.md, so each member school can own and update its own
+   listing. This is the "find a school near you" growth engine, and the
+   maintenance hook that keeps the network visible. */
+export interface School {
+  slug: string;
+  name: string;
+  org?: string;
+  area?: string;
+  address?: string;
+  postcode?: string;
+  region: string;
+  contact?: string;
+  when?: string;
+  note: string;
+}
+
+const schoolFiles = import.meta.glob("/content/schools/*.md", {
+  query: "?raw",
+  import: "default",
+  eager: true,
+}) as Record<string, string>;
+
+export const schools: School[] = Object.entries(schoolFiles)
+  .map(([path, raw]) => {
+    const { data, body } = parseFrontmatter(raw);
+    return {
+      slug: slugFromPath(path),
+      name: (data.name as string) || "Gujarati school",
+      org: (data.org as string) || undefined,
+      area: (data.area as string) || undefined,
+      address: (data.address as string) || undefined,
+      postcode: (data.postcode as string) || undefined,
+      region: (data.region as string) || "Other member schools",
+      contact: (data.contact as string) || undefined,
+      when: (data.when as string) || undefined,
+      note: body.trim(),
+    };
+  })
+  .sort((a, b) => a.name.localeCompare(b.name, "en"));
+
+/* Regions in geographic reading order, with the catch-all last. */
+const regionOrder = [
+  "London & the South East",
+  "East of England",
+  "The Midlands",
+  "The North West",
+  "Other member schools",
+];
+export const schoolRegions = Array.from(new Set(schools.map((s) => s.region))).sort(
+  (a, b) => {
+    const ia = regionOrder.indexOf(a);
+    const ib = regionOrder.indexOf(b);
+    return (ia < 0 ? 99 : ia) - (ib < 0 ? 99 : ib) || a.localeCompare(b);
+  }
+);
+export const schoolTownCount = new Set(
+  schools.map((s) => s.area).filter(Boolean)
+).size;
+
 /* ---------- lookups ---------- */
 export const getPost = (slug: string) => posts.find((p) => p.slug === slug);
 export const getResource = (slug: string) => resources.find((r) => r.slug === slug);

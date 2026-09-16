@@ -13,6 +13,8 @@ const Rules = lazy(() => import("@/pages/Rules"));
 const Committee = lazy(() => import("@/pages/Committee"));
 const Teachers = lazy(() => import("@/pages/Teachers"));
 const Parents = lazy(() => import("@/pages/Parents"));
+const FindSchool = lazy(() => import("@/pages/FindSchool"));
+const Teach = lazy(() => import("@/pages/Teach"));
 const Resources = lazy(() => import("@/pages/Resources"));
 const ResourceDetail = lazy(() => import("@/pages/ResourceDetail"));
 const News = lazy(() => import("@/pages/News"));
@@ -55,6 +57,8 @@ function AnimatedRoutes() {
           <Route path="/about/committee" element={page(<Committee />)} />
           <Route path="/teachers" element={page(<Teachers />)} />
           <Route path="/parents" element={page(<Parents />)} />
+          <Route path="/find-a-school" element={page(<FindSchool />)} />
+          <Route path="/teach" element={page(<Teach />)} />
           <Route path="/resources" element={page(<Resources />)} />
           <Route path="/resources/:slug" element={page(<ResourceDetail />)} />
           <Route path="/news" element={page(<News />)} />

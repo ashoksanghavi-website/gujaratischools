@@ -12,7 +12,7 @@ const PARENT_LINKS = [
   {
     title: "Find a Gujarati school",
     blurb: "List of Gujarati Schools in UK.",
-    to: "/resources?audience=Parents&type=Useful+Links",
+    to: "/find-a-school",
     image: photos.parents1,
   },
   {

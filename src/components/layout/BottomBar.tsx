@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { bottomBar } from "@/data/nav";
-import { IconHome, IconLibrary, IconNews, IconMail } from "@/components/ui/Icons";
+import { IconHome, IconLibrary, IconMail, IconSchoolPin } from "@/components/ui/Icons";
 
 /* ============================================================
    Bottom bar — phones only.
@@ -12,7 +12,7 @@ import { IconHome, IconLibrary, IconNews, IconMail } from "@/components/ui/Icons
 const ICONS = {
   home: IconHome,
   library: IconLibrary,
-  news: IconNews,
+  school: IconSchoolPin,
   mail: IconMail,
 } as const;
 

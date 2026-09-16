@@ -73,7 +73,7 @@
   --s-9: 96px;
   --s-10: 128px;
 
-  --section-y: clamp(4rem, 8vw, 7rem);
+  --section-y: clamp(2.5rem, 4vw, 4rem);
   --gutter: clamp(16px, 2vw, 32px);
   --content-max: 1200px;
   --baseline: 8px;

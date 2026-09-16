@@ -19,7 +19,7 @@ const STEPS = [
   {
     title: "Find a Gujarati school near you",
     body: "The Consortium works with around 30 schools run by temples and community groups across London, Leicester, Birmingham, Manchester, Walsall, Bolton, Crawley, Luton and Welwyn Garden City.",
-    to: "/resources?audience=Parents&type=Useful+Links",
+    to: "/find-a-school",
     action: "See the list of schools",
   },
   {

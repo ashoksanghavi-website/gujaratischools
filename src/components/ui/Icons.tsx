@@ -130,3 +130,10 @@ export const IconCheck = ({ className, size }: P) => (
     <path d="M5 12.5l4.5 4.5L19 7" stroke="currentColor" strokeWidth="2.1" strokeLinecap="round" strokeLinejoin="round" />
   </svg>
 );
+
+export const IconSchoolPin = ({ className, size }: P) => (
+  <svg {...s(size)} className={className} fill="none" aria-hidden="true">
+    <path d="M12 21s7-5.6 7-11a7 7 0 10-14 0c0 5.4 7 11 7 11z" stroke="currentColor" strokeWidth="1.7" strokeLinejoin="round" />
+    <path d="M8.5 10.5L12 8l3.5 2.5-3.5 2.2-3.5-2.2zM10 11.5V13" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+  </svg>
+);

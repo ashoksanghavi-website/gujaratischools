@@ -1,5 +1,5 @@
 import { Hero } from "@/sections/Hero";
-import { QuickAccess } from "@/sections/QuickAccess";
+import { GrowthModule } from "@/sections/GrowthModule";
 import { WhatWeDo } from "@/sections/WhatWeDo";
 import { MissionBand } from "@/sections/MissionBand";
 import { LatestNews } from "@/sections/LatestNews";
@@ -22,7 +22,7 @@ export default function Home() {
         jsonLd={organisationJsonLd}
       />
       <Hero />
-      <QuickAccess />
+      <GrowthModule />
       <WhatWeDo />
       <MissionBand />
       <LatestNews />

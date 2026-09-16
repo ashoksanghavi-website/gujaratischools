@@ -19,6 +19,7 @@ export interface MegaColumn {
 export const primaryNav: NavItem[] = [
   { label: "Home", to: "/" },
   { label: "About", to: "/about" },
+  { label: "Find a school", to: "/find-a-school" },
   { label: "Teachers", to: "/teachers" },
   { label: "Parents", to: "/parents" },
   { label: "Resources", to: "/resources" },
@@ -65,6 +66,7 @@ export const megaFor: Record<string, MegaColumn[]> = {
     {
       heading: "Start here",
       items: [
+        { label: "Become a teacher", to: "/teach", description: "New to teaching? We train you — no qualification needed" },
         { label: "Teacher hub", to: "/teachers", description: "Training, exams and classroom material" },
         { label: "Training events", to: "/events" },
         { label: "Become a member", to: "/membership" },
@@ -92,10 +94,10 @@ export const megaFor: Record<string, MegaColumn[]> = {
 /** Footer: the most-requested documents, as direct downloads. */
 export const footerExplore: NavItem[] = [
   { label: "About CGS", to: "/about" },
+  { label: "Find a school", to: "/find-a-school" },
+  { label: "Become a teacher", to: "/teach" },
   { label: "Rules & objects", to: "/about/rules" },
   { label: "Committee", to: "/about/committee" },
-  { label: "Teachers", to: "/teachers" },
-  { label: "Parents", to: "/parents" },
   { label: "News & events", to: "/news" },
   { label: "Photo gallery", to: "/gallery" },
 ];
@@ -104,6 +106,6 @@ export const footerExplore: NavItem[] = [
 export const bottomBar = [
   { label: "Home", to: "/", icon: "home" as const },
   { label: "Resources", to: "/resources", icon: "library" as const },
-  { label: "News", to: "/news", icon: "news" as const },
+  { label: "Find a school", to: "/find-a-school", icon: "school" as const },
   { label: "Contact", to: "/contact", icon: "mail" as const },
 ];

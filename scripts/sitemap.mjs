@@ -8,6 +8,8 @@ const BASE = 'https://www.gujaratischools.org';
 
 const STATIC = [
   ['/', '1.0', 'weekly'],
+  ['/find-a-school', '0.9', 'monthly'],
+  ['/teach', '0.8', 'monthly'],
   ['/resources', '0.9', 'weekly'],
   ['/news', '0.8', 'weekly'],
   ['/events', '0.7', 'monthly'],
