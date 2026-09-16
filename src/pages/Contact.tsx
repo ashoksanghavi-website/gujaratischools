@@ -36,7 +36,7 @@ export default function Contact() {
     setSubmitted(true);
     if (!valid) return;
     const subject = encodeURIComponent(`Website enquiry from ${name}`);
-    const body = encodeURIComponent(`${message}\n\n—\n${name}\n${email}`);
+    const body = encodeURIComponent(`${message}\n\n-\n${name}\n${email}`);
     window.location.href = `mailto:${contact.email}?subject=${subject}&body=${body}`;
     setSent(true);
   };
@@ -45,13 +45,13 @@ export default function Contact() {
     <>
       <Seo
         title="Contact"
-        description="Contact the Consortium of Gujarati Schools — Jayant Tanna, Chair, and the membership secretary."
+        description="Contact the Consortium of Gujarati Schools, Jayant Tanna, Chair, and the membership secretary."
         path="/contact"
       />
 
       <PageHero
         title="Contact us"
-        intro="Questions about training, membership or finding a Gujarati school — we are glad to hear from you."
+        intro="Questions about training, membership or finding a Gujarati school, we are glad to hear from you."
         breadcrumb={[{ to: "/", label: "Home" }]}
         kakko="સ"
         tint

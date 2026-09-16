@@ -1,5 +1,5 @@
 /* ============================================================
-   Static site copy — the single source of truth for anything
+   Static site copy, the single source of truth for anything
    that isn't markdown. Committee, contact details, mission.
    Verbatim client copy is marked; nothing here is invented.
    ============================================================ */
@@ -76,7 +76,7 @@ export const themes = [
   },
 ] as const;
 
-/* The three doors on the home page — the fix for the navigation
+/* The three doors on the home page, the fix for the navigation
    complaint. Each goes straight into a pre-filtered library view. */
 export const audienceDoors = [
   {
@@ -119,7 +119,7 @@ export const gandhiji = {
   text: "હું મારા ઘરની આસપાસ દીવાલ ચણી લેવા તથા મારી બારીઓ બંધ કરી દેવા નથી માગતો. મારા ઘરની આસ પાસ સઘળા દેશોની સંસ્કૃતિના પવનની લહેરીઓ છૂટથી વાતી રહે એમ ઇચ્છું છું. પણ પવનની એવી કોઇ લહેરી દ્વારા જમીનથી અધ્ધર થઇ જવાનો હું ઇનકાર કરું છું. સાહિત્યમાં રસ ધરાવતાં આપણાં તરુણ સ્ત્રીપુરુષો અંગ્રેજી તેમજ બીજી વિશ્વભાષાઓ પેટ ભરીને શીખે એમ હું ઇચ્છું છું. અને પછી તેઓ જગદીશચંદ્ર બોઝ, પ્રફુલચંદ્ર રોય અને કવિવર રવીંદ્રનાથ ટાગોરની પેઠે પોતાના અભ્યાસનો લાભ હિંદને તથા દુનિયાને આપે એવી તેમની પાસેથી અપેક્ષા રાખું છું. પરંતુ એક પણ હિંદવાસી પોતાની માતૃભાષાને ભુલે, તેની અવગણના કરે કે તેનાથી શરમાય, અથવા પોતાની માતૃભાષામાં પોતે વિચાર કરી શકતો નથી કે પોતાના વિચારો સારામાં સારી રીતે દર્શાવી શકતો નથી એમ તેને લાગે, એમ હું ઇચ્છતો નથી.",
 };
 
-/* The Pearson GCSE specification changes — verbatim in substance. */
+/* The Pearson GCSE specification changes, verbatim in substance. */
 export const examUpdate = {
   title: "Two changes to the Pearson GCSE Gujarati specification",
   intro: "Pearson have made two small changes in the GCSE Gujarati specification.",
@@ -136,7 +136,7 @@ export const examUpdate = {
   gradingVideoId: "mcf6rtgdp5U",
 };
 
-/* Membership — verbatim in substance. */
+/* Membership, verbatim in substance. */
 export const membership = {
   intro:
     "Membership is open to individual teachers, parents and supporters, and to Gujarati schools, temples and community organisations across the UK.",
@@ -180,11 +180,11 @@ export interface Member {
 }
 
 export const committeeCurrent = {
-  term: "2024 – 2026",
+  term: "2024-2026",
   members: [
     { name: "Jayantilal Tanna", role: "Chairperson", photo: "/images/uploads/2024/11/Jayant-Tanna.jpg" },
-    { name: "Shobhaben Joshi", role: "Vice Chair — Midlands", photo: "/images/uploads/2024/11/Shobhaben-Joshi.jpg" },
-    { name: "Chetana Bhatt-Shah", role: "Vice Chair — Northwest", photo: "/images/uploads/2024/11/Chetana-Bhatt-Shah.jpg" },
+    { name: "Shobhaben Joshi", role: "Vice Chair, Midlands", photo: "/images/uploads/2024/11/Shobhaben-Joshi.jpg" },
+    { name: "Chetana Bhatt-Shah", role: "Vice Chair, Northwest", photo: "/images/uploads/2024/11/Chetana-Bhatt-Shah.jpg" },
     { name: "Vijyaben Bhanderi", role: "Secretary", photo: "/images/uploads/2024/11/Vijyaben-Bhanderi.jpg" },
     { name: "Rekhaben Patel", role: "Treasurer", photo: "/images/uploads/2024/11/Rekhaben-Patel.jpg" },
     { name: "Sonalben R. Shah", role: "Immediate Past Chair", photo: "/images/uploads/2024/11/Sonalben-R.Shah_.jpg" },
@@ -199,7 +199,7 @@ export const committeeCurrent = {
 };
 
 export const committeeArchive = {
-  term: "2020 – 2022",
+  term: "2020-2022",
   members: [
     { name: "Jayantilal Tanna", role: "Chairperson", photo: "/images/uploads/2020/11/Jayantilal-Tanna.jpg" },
     { name: "Vijyaben Bhanderi", role: "Secretary", photo: "/images/uploads/2020/11/Vijyaben-Bhanderi.png" },
@@ -255,7 +255,20 @@ export const about = {
   facts: [
     { value: "2015", label: "Founded, on 30 October" },
     { value: "~30", label: "Organisation members" },
-    { value: "5–16", label: "Ages supported" },
+    { value: "5-16", label: "Ages supported" },
     { value: "9", label: "Towns and cities" },
   ],
+};
+
+/* ---------- Enquiry / apply forms ----------
+   The "Enquire" and "Register interest" forms submit to whatever is set
+   here. Leave `endpoint` empty and every form opens the visitor's email
+   app with the details filled in (works everywhere, no account). To
+   capture submissions without the email-app step, create a free form at
+   https://formspree.io and paste its endpoint URL here, the forms will
+   POST to it automatically, no other change needed. */
+export const forms = {
+  endpoint: "",
+  schoolTo: contact.email,
+  teachTo: contact.membershipEmail,
 };

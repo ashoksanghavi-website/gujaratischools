@@ -1,5 +1,5 @@
 ---
-title: "Unit A812 – Speaking specimen"
+title: "Unit A812, Speaking specimen"
 description: "OCR GCSE specification. File: Unit A812 speaking specimen."
 audience: [Teachers, Leaders]
 type: Exam Specifications
@@ -13,4 +13,4 @@ date: 2020-01-01
 source: sample-assessment-material-sam
 tags: [Exam Specifications, GCSE, OCR]
 ---
-Unit A812 – Speaking specimen — part of OCR GCSE specification. Migrated from the previous CGS website page `/sample-assessment-material-sam`.
+Unit A812, Speaking specimen, part of OCR GCSE specification. Migrated from the previous CGS website page `/sample-assessment-material-sam`.

@@ -3,7 +3,7 @@ import { VideoEmbed } from "@/components/ui/VideoEmbed";
 import { Kakko, RuledPaper } from "@/components/motifs/Motifs";
 
 /* ============================================================
-   Heritage — set as an editorial passage, not a card.
+   Heritage, set as an editorial passage, not a card.
    Followed by the Gandhiji passage, which is the cultural heart
    of the page and gets the most typographic care on the site:
    generous measure, Noto Sans Gujarati, comfortable line height,

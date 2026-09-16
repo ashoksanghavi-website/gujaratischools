@@ -12,4 +12,4 @@ date: 2020-01-01
 source: new-a-level-guidelines
 tags: [Exam Specifications, A Level]
 ---
-A-Level 2018 getting ready to teach — part of New A Level guidance. Migrated from the previous CGS website page `/new-a-level-guidelines`.
+A-Level 2018 getting ready to teach, part of New A Level guidance. Migrated from the previous CGS website page `/new-a-level-guidelines`.

@@ -11,4 +11,4 @@ date: 2020-11-28
 source: training-on-28th-november-2020
 tags: [Training Materials]
 ---
-FAQ Speaking endorsement for private and non-taught learners — part of Training, 28 November 2020. Migrated from the previous CGS website page `/training-on-28th-november-2020`.
+FAQ Speaking endorsement for private and non-taught learners, part of Training, 28 November 2020. Migrated from the previous CGS website page `/training-on-28th-november-2020`.

@@ -1,5 +1,5 @@
 ---
-title: "Languages in Harrow – 2011 Census"
+title: "Languages in Harrow, 2011 Census"
 description: "File: Languages In Harrow 2011 Census."
 audience: [Teachers, Leaders]
 type: Exam Information
@@ -11,4 +11,4 @@ date: 2019-01-01
 source: gcse-exam-entries
 tags: [Exam Information, GCSE]
 ---
-Languages in Harrow – 2011 Census. Migrated from the previous CGS website page `/gcse-exam-entries`.
+Languages in Harrow, 2011 Census. Migrated from the previous CGS website page `/gcse-exam-entries`.

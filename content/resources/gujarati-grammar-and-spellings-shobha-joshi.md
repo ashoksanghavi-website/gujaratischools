@@ -1,5 +1,5 @@
 ---
-title: "Gujarati Grammar and Spellings – Shobha Joshi"
+title: "Gujarati Grammar and Spellings, Shobha Joshi"
 description: "File: Gujarati Grammar Spellings Shobha Joshi."
 audience: [Teachers]
 type: Teaching Materials
@@ -10,4 +10,4 @@ date: 2019-01-01
 source: gujarati-grammar
 tags: [Teaching Materials]
 ---
-Gujarati Grammar and Spellings – Shobha Joshi. Migrated from the previous CGS website page `/gujarati-grammar`.
+Gujarati Grammar and Spellings, Shobha Joshi. Migrated from the previous CGS website page `/gujarati-grammar`.

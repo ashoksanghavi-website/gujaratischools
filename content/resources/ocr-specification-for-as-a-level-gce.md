@@ -13,4 +13,4 @@ date: 2020-01-01
 source: ocr-a-level
 tags: [Exam Specifications, A Level, OCR]
 ---
-OCR Specification for AS/A Level GCE — part of OCR A Level specification. Migrated from the previous CGS website page `/ocr-a-level`.
+OCR Specification for AS/A Level GCE, part of OCR A Level specification. Migrated from the previous CGS website page `/ocr-a-level`.

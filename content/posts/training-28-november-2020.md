@@ -1,5 +1,5 @@
 ---
-title: Teacher Training — 28 November 2020
+title: Teacher Training, 28 November 2020
 date: 2020-11-28
 category: Training Events
 excerpt: A teacher training session focused on the Speaking Endorsement, with course material for teachers to download and use in class.

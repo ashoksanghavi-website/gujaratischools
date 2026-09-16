@@ -4,7 +4,7 @@ import { bottomBar } from "@/data/nav";
 import { IconHome, IconLibrary, IconMail, IconSchoolPin } from "@/components/ui/Icons";
 
 /* ============================================================
-   Bottom bar — phones only.
+   Bottom bar, phones only.
    Four destinations, so the two things people came for are always
    one tap away. Hides while scrolling down, returns on scroll up.
    ============================================================ */

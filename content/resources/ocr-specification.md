@@ -13,4 +13,4 @@ date: 2020-01-01
 source: ocr-gcse
 tags: [Exam Specifications, GCSE, OCR]
 ---
-OCR Specification — part of OCR GCSE specification. Migrated from the previous CGS website page `/ocr-gcse`.
+OCR Specification, part of OCR GCSE specification. Migrated from the previous CGS website page `/ocr-gcse`.

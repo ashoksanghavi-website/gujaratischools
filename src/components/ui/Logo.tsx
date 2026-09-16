@@ -5,7 +5,7 @@ export function Logo({ className = "" }: { className?: string }) {
     <Link
       to="/"
       className={`inline-flex items-center ${className}`}
-      aria-label="Consortium of Gujarati Schools — home"
+      aria-label="Consortium of Gujarati Schools, home"
     >
       <img
         src="/images/logo/cgs-logo-colour.png"

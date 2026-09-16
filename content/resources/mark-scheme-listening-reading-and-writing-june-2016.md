@@ -1,5 +1,5 @@
 ---
-title: "Mark scheme (Listening, reading and writing) – June 2016"
+title: "Mark scheme (Listening, reading and writing), June 2016"
 description: "OCR A Level 2016. File: Mark scheme Unit F883 listening reading and writing 1 june."
 audience: [Teachers]
 type: Past Papers
@@ -14,4 +14,4 @@ date: 2016-06-01
 source: past-papers-for-2016-session
 tags: [Past Papers, A Level, OCR, 2016]
 ---
-Mark scheme (Listening, reading and writing) – June 2016 — part of OCR A Level 2016. Migrated from the previous CGS website page `/past-papers-for-2016-session`.
+Mark scheme (Listening, reading and writing), June 2016, part of OCR A Level 2016. Migrated from the previous CGS website page `/past-papers-for-2016-session`.

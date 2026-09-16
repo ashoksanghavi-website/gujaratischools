@@ -11,4 +11,4 @@ date: 2020-11-28
 source: training-on-28th-november-2020
 tags: [Training Materials]
 ---
-Speaking Endorsement GCSE Gujarati 2021 — part of Training, 28 November 2020. Migrated from the previous CGS website page `/training-on-28th-november-2020`.
+Speaking Endorsement GCSE Gujarati 2021, part of Training, 28 November 2020. Migrated from the previous CGS website page `/training-on-28th-november-2020`.

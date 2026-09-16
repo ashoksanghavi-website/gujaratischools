@@ -111,7 +111,7 @@ export function Header() {
           transition: "height var(--t-base) var(--ease-out), opacity var(--t-fast) var(--ease-out)",
         }}
       >
-        <div className="container-cgs flex h-10 items-center justify-between text-small text-ink-soft">
+        <div className="mx-auto flex h-10 w-full max-w-[1400px] items-center justify-between px-[var(--gutter)] text-small text-ink-soft">
           <p>Inspiring Gujarati teachers and students</p>
           <div className="flex items-center gap-5">
             <span className="flex items-center gap-2">
@@ -141,8 +141,8 @@ export function Header() {
           compact ? "border-rule bg-paper shadow-e1" : "border-transparent bg-paper/95 backdrop-blur-sm"
         }`}
       >
-        <div className="container-cgs flex items-center justify-between gap-4" style={{ minHeight: compact ? 64 : 76, transition: "min-height var(--t-base) var(--ease-out)" }}>
-          <Link to="/" className="flex shrink-0 items-center gap-3" aria-label={`${site.name} — home`}>
+        <div className="mx-auto flex w-full max-w-[1400px] items-center justify-between gap-4 px-[var(--gutter)]" style={{ minHeight: compact ? 64 : 76, transition: "min-height var(--t-base) var(--ease-out)" }}>
+          <Link to="/" className="flex shrink-0 items-center gap-3" aria-label={`${site.name}, home`}>
             <img
               src="/images/logo/cgs-logo-colour.png"
               alt=""
@@ -151,7 +151,7 @@ export function Header() {
               className="h-auto w-auto transition-all duration-base ease-out"
               style={{ height: compact ? 36 : 44 }}
             />
-            <span className="hidden font-display text-[1.05rem] font-semibold leading-tight text-ink sm:block">
+            <span className="hidden font-display text-[1.05rem] font-semibold leading-tight text-ink sm:block xl:hidden 2xl:block">
               Consortium of
               <br />
               Gujarati Schools
@@ -159,7 +159,7 @@ export function Header() {
           </Link>
 
           {/* Desktop nav */}
-          <div ref={navRef} className="hidden items-center gap-1 lg:flex" onMouseLeave={hoverClose}>
+          <div ref={navRef} className="hidden items-center gap-0.5 xl:flex" onMouseLeave={hoverClose}>
             {primaryNav.map((item) => {
               const hasMega = Boolean(megaFor[item.to]);
               return (
@@ -174,7 +174,7 @@ export function Header() {
                     onClick={() => setOpenMega(null)}
                     className={({ isActive }) =>
                       [
-                        "relative flex min-h-[44px] items-center gap-1 whitespace-nowrap rounded-sm px-2.5 text-small font-medium transition-colors duration-fast",
+                        "relative flex min-h-[44px] items-center gap-1 whitespace-nowrap rounded-sm px-2 text-small font-medium transition-colors duration-fast",
                         isActive ? "text-indigo" : "text-ink hover:text-indigo",
                       ].join(" ")
                     }
@@ -201,26 +201,17 @@ export function Header() {
 
           {/* Actions */}
           <div className="flex shrink-0 items-center gap-2">
-            {/* Search is a visible field on desktop, never hidden behind an icon. */}
+            {/* Search opens a full overlay; the "/" shortcut opens it too. */}
             <button
               type="button"
               onClick={openSearch}
-              className="hidden min-h-[44px] items-center gap-2 rounded-pill border border-rule-strong bg-paper-raised px-4 text-small text-ink-soft transition-colors duration-fast hover:border-indigo hover:text-ink xl:flex"
-            >
-              <IconSearch size={16} />
-              <span>Search resources…</span>
-              <kbd className="ml-2 rounded-[4px] border border-rule px-1.5 py-0.5 text-micro text-ink-soft">/</kbd>
-            </button>
-            <button
-              type="button"
-              onClick={openSearch}
-              aria-label="Search"
-              className="flex min-h-[44px] min-w-[44px] items-center justify-center rounded-pill text-ink transition-colors duration-fast hover:bg-paper-tint xl:hidden"
+              aria-label="Search the site"
+              className="flex min-h-[44px] min-w-[44px] items-center justify-center rounded-pill text-ink transition-colors duration-fast hover:bg-paper-tint"
             >
               <IconSearch size={20} />
             </button>
 
-            <ButtonLink to="/membership" size="sm" className="hidden lg:inline-flex" magnetic>
+            <ButtonLink to="/membership" size="sm" className="hidden xl:inline-flex" magnetic>
               Become a member
             </ButtonLink>
 
@@ -229,7 +220,7 @@ export function Header() {
               onClick={() => setMobileOpen(true)}
               aria-label="Open menu"
               aria-expanded={mobileOpen}
-              className="flex min-h-[48px] min-w-[48px] items-center justify-center rounded-sm text-ink transition-colors duration-fast hover:bg-paper-tint lg:hidden"
+              className="flex min-h-[48px] min-w-[48px] items-center justify-center rounded-sm text-ink transition-colors duration-fast hover:bg-paper-tint xl:hidden"
             >
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                 <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" strokeWidth="1.9" strokeLinecap="round" />

@@ -12,4 +12,4 @@ date: 2020-01-01
 source: new-a-level-spec-and-sam
 tags: [Exam Specifications, A Level]
 ---
-Course material from the training event Title page for the pack — part of New A Level guidance. Migrated from the previous CGS website page `/new-a-level-spec-and-sam`.
+Course material from the training event Title page for the pack, part of New A Level guidance. Migrated from the previous CGS website page `/new-a-level-spec-and-sam`.

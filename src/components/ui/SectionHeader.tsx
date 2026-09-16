@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
    SectionHeader
    One component so every section heading sits the same distance
    from its content, site-wide. Optional label is sentence case at
-   small size — never a tracked-out all-caps eyebrow.
+   small size, never a tracked-out all-caps eyebrow.
    ============================================================ */
 
 export function SectionHeader({
@@ -53,7 +53,7 @@ export function SectionHeader({
 }
 
 /* ============================================================
-   EmptyState — names what is too narrow and offers the fix.
+   EmptyState, names what is too narrow and offers the fix.
    Never a shrug; always one tap out of the dead end.
    ============================================================ */
 

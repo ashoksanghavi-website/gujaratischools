@@ -11,4 +11,4 @@ date: 2019-07-21
 source: training-on-21st-july-2019
 tags: [Training Materials]
 ---
-Vote of thanks — part of Training, 21 July 2019. Migrated from the previous CGS website page `/training-on-21st-july-2019`.
+Vote of thanks, part of Training, 21 July 2019. Migrated from the previous CGS website page `/training-on-21st-july-2019`.

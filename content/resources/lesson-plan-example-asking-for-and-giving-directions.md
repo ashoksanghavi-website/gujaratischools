@@ -1,5 +1,5 @@
 ---
-title: "Lesson plan example – Asking for and giving directions"
+title: "Lesson plan example, Asking for and giving directions"
 description: "Training, 2 April 2016. File: હું ક્યાં છું રમત."
 audience: [Teachers]
 type: Training Materials
@@ -11,4 +11,4 @@ date: 2016-04-02
 source: training-on-2nd-april-2016
 tags: [Training Materials]
 ---
-Lesson plan example – Asking for and giving directions — part of Training, 2 April 2016. Migrated from the previous CGS website page `/training-on-2nd-april-2016`.
+Lesson plan example, Asking for and giving directions, part of Training, 2 April 2016. Migrated from the previous CGS website page `/training-on-2nd-april-2016`.

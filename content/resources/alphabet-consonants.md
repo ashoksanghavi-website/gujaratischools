@@ -1,5 +1,5 @@
 ---
-title: "Alphabet – consonants"
+title: "Alphabet, consonants"
 description: "File: Albhabet Consonants."
 audience: [Teachers]
 type: Teaching Materials
@@ -10,4 +10,4 @@ date: 2019-01-01
 source: resources-for-teachers
 tags: [Teaching Materials]
 ---
-Alphabet – consonants. Migrated from the previous CGS website page `/resources-for-teachers`.
+Alphabet, consonants. Migrated from the previous CGS website page `/resources-for-teachers`.

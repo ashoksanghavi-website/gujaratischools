@@ -1,5 +1,5 @@
 ---
-title: "Mark scheme (Listening, reading and writing) – June 2017"
+title: "Mark scheme (Listening, reading and writing), June 2017"
 description: "OCR A Level 2017. File: Mark scheme Unit F883 gujarati listening reading and writing."
 audience: [Teachers]
 type: Past Papers
@@ -14,4 +14,4 @@ date: 2017-06-01
 source: past-papers-for-2017-session
 tags: [Past Papers, A Level, OCR, 2017]
 ---
-Mark scheme (Listening, reading and writing) – June 2017 — part of OCR A Level 2017. Migrated from the previous CGS website page `/past-papers-for-2017-session`.
+Mark scheme (Listening, reading and writing), June 2017, part of OCR A Level 2017. Migrated from the previous CGS website page `/past-papers-for-2017-session`.

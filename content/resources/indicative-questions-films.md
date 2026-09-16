@@ -1,5 +1,5 @@
 ---
-title: "Indicative questions – Films"
+title: "Indicative questions, Films"
 description: "New A Level guidance. File: Indicative questions Films."
 audience: [Teachers]
 type: Exam Specifications
@@ -12,4 +12,4 @@ date: 2020-01-01
 source: new-a-level-spec-and-sam
 tags: [Exam Specifications, A Level]
 ---
-Indicative questions – Films — part of New A Level guidance. Migrated from the previous CGS website page `/new-a-level-spec-and-sam`.
+Indicative questions, Films, part of New A Level guidance. Migrated from the previous CGS website page `/new-a-level-spec-and-sam`.

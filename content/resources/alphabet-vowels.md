@@ -1,5 +1,5 @@
 ---
-title: "Alphabet – Vowels"
+title: "Alphabet, Vowels"
 description: "File: Alphabet Vowels Vowel signs."
 audience: [Teachers]
 type: Teaching Materials
@@ -10,4 +10,4 @@ date: 2019-01-01
 source: resources-for-teachers
 tags: [Teaching Materials]
 ---
-Alphabet – Vowels. Migrated from the previous CGS website page `/resources-for-teachers`.
+Alphabet, Vowels. Migrated from the previous CGS website page `/resources-for-teachers`.

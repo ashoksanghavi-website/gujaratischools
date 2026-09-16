@@ -1,5 +1,5 @@
 ---
-title: "Environment – Going Green – Reading"
+title: "Environment, Going Green, Reading"
 description: "File: Environment Going Green Reading."
 audience: [Teachers]
 type: Teaching Materials
@@ -10,4 +10,4 @@ date: 2020-01-01
 source: resources-for-gcse-theme-five
 tags: [Teaching Materials]
 ---
-Environment – Going Green – Reading. Migrated from the previous CGS website page `/resources-for-gcse-theme-five`.
+Environment, Going Green, Reading. Migrated from the previous CGS website page `/resources-for-gcse-theme-five`.

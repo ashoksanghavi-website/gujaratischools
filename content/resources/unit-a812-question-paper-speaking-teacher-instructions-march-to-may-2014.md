@@ -1,5 +1,5 @@
 ---
-title: "Unit A812 Question paper – Speaking (teacher instructions) – March to May 2014"
+title: "Unit A812 Question paper, Speaking (teacher instructions), March to May 2014"
 description: "OCR GCSE 2014. File: Question paper Unit A812 speaking teacher instructions."
 audience: [Teachers]
 type: Past Papers
@@ -14,4 +14,4 @@ date: 2014-06-01
 source: past-papers-for-2014-session-ocr-gcse
 tags: [Past Papers, GCSE, OCR, 2014]
 ---
-Unit A812 Question paper – Speaking (teacher instructions) – March to May 2014 — part of OCR GCSE 2014. Migrated from the previous CGS website page `/past-papers-for-2014-session-ocr-gcse`.
+Unit A812 Question paper, Speaking (teacher instructions), March to May 2014, part of OCR GCSE 2014. Migrated from the previous CGS website page `/past-papers-for-2014-session-ocr-gcse`.

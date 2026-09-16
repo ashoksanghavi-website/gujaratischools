@@ -1,5 +1,5 @@
 ---
-title: "Unit A814 Question paper – Writing – June 2016"
+title: "Unit A814 Question paper, Writing, June 2016"
 description: "OCR GCSE 2016. File: Question paper Unit A814/01 writing."
 audience: [Teachers]
 type: Past Papers
@@ -14,4 +14,4 @@ date: 2016-06-01
 source: past-papers-for-2016-session-ocr-gcse
 tags: [Past Papers, GCSE, OCR, 2016]
 ---
-Unit A814 Question paper – Writing – June 2016 — part of OCR GCSE 2016. Migrated from the previous CGS website page `/past-papers-for-2016-session-ocr-gcse`.
+Unit A814 Question paper, Writing, June 2016, part of OCR GCSE 2016. Migrated from the previous CGS website page `/past-papers-for-2016-session-ocr-gcse`.

@@ -1,5 +1,5 @@
 ---
-title: "Theme 5 – Earthquake in Gujarat (sample)"
+title: "Theme 5, Earthquake in Gujarat (sample)"
 description: "Training, 27 October 2018. File: Theme 5 Sample Earthquake in Gujarat."
 audience: [Teachers]
 type: Training Materials
@@ -11,4 +11,4 @@ date: 2018-10-27
 source: training-on-27th-october-2018
 tags: [Training Materials]
 ---
-Theme 5 – Earthquake in Gujarat (sample) — part of Training, 27 October 2018. Migrated from the previous CGS website page `/training-on-27th-october-2018`.
+Theme 5, Earthquake in Gujarat (sample), part of Training, 27 October 2018. Migrated from the previous CGS website page `/training-on-27th-october-2018`.

@@ -1,5 +1,5 @@
 ---
-title: "Indicative questions – literacy texts"
+title: "Indicative questions, literacy texts"
 description: "Training, 21 July 2019. File: Indicative questions Literary Texts."
 audience: [Teachers]
 type: Training Materials
@@ -11,4 +11,4 @@ date: 2019-07-21
 source: training-on-21st-july-2019
 tags: [Training Materials]
 ---
-Indicative questions – literacy texts — part of Training, 21 July 2019. Migrated from the previous CGS website page `/training-on-21st-july-2019`.
+Indicative questions, literacy texts, part of Training, 21 July 2019. Migrated from the previous CGS website page `/training-on-21st-july-2019`.

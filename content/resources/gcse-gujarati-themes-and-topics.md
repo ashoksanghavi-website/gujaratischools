@@ -1,5 +1,5 @@
 ---
-title: "GCSE Gujarati – Themes and topics"
+title: "GCSE Gujarati, Themes and topics"
 description: "File: GCSE Gujarati Themes and Topics."
 audience: [Teachers, Leaders]
 type: Exam Information
@@ -11,4 +11,4 @@ date: 2020-01-01
 source: gcse-2018-gujarati
 tags: [Exam Information, GCSE]
 ---
-GCSE Gujarati – Themes and topics. Migrated from the previous CGS website page `/gcse-2018-gujarati`.
+GCSE Gujarati, Themes and topics. Migrated from the previous CGS website page `/gcse-2018-gujarati`.

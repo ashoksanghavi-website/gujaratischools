@@ -11,4 +11,4 @@ date: 2018-07-01
 source: training-on-1st-july-2018
 tags: [Training Materials]
 ---
-Course material from the training event Title page for the pack — part of Training, 1 July 2018. Migrated from the previous CGS website page `/training-on-1st-july-2018`.
+Course material from the training event Title page for the pack, part of Training, 1 July 2018. Migrated from the previous CGS website page `/training-on-1st-july-2018`.

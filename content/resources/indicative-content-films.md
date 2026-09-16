@@ -1,5 +1,5 @@
 ---
-title: "Indicative content – Films"
+title: "Indicative content, Films"
 description: "New A Level guidance. File: Indicative questions Films."
 audience: [Teachers]
 type: Exam Specifications
@@ -12,4 +12,4 @@ date: 2020-01-01
 source: new-a-level-guidelines
 tags: [Exam Specifications, A Level]
 ---
-Indicative content – Films — part of New A Level guidance. Migrated from the previous CGS website page `/new-a-level-guidelines`.
+Indicative content, Films, part of New A Level guidance. Migrated from the previous CGS website page `/new-a-level-guidelines`.

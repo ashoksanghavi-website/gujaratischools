@@ -1,5 +1,5 @@
 ---
-title: "Unit A802 Gujarati – Notes for candidates – Speaking test"
+title: "Unit A802 Gujarati, Notes for candidates, Speaking test"
 description: "OCR GCSE specification. File: Dutch Unit A802 gujarati Unit A812 persian Unit A822 portuguese Unit A832 and turkish Unit A842 notes for candidates speaking test ntc010."
 audience: [Teachers, Leaders]
 type: Exam Specifications
@@ -13,4 +13,4 @@ date: 2020-01-01
 source: ocr-gcse
 tags: [Exam Specifications, GCSE, OCR]
 ---
-Unit A802 Gujarati – Notes for candidates – Speaking test — part of OCR GCSE specification. Migrated from the previous CGS website page `/ocr-gcse`.
+Unit A802 Gujarati, Notes for candidates, Speaking test, part of OCR GCSE specification. Migrated from the previous CGS website page `/ocr-gcse`.

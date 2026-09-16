@@ -1,5 +1,5 @@
 ---
-title: "Mark scheme (Listening, reading and writing) – June 2015"
+title: "Mark scheme (Listening, reading and writing), June 2015"
 description: "OCR A Level 2015. File: Mark scheme Unit F883 listening reading and writing 1 june."
 audience: [Teachers]
 type: Past Papers
@@ -14,4 +14,4 @@ date: 2015-06-01
 source: past-papers-for-2015-session
 tags: [Past Papers, A Level, OCR, 2015]
 ---
-Mark scheme (Listening, reading and writing) – June 2015 — part of OCR A Level 2015. Migrated from the previous CGS website page `/past-papers-for-2015-session`.
+Mark scheme (Listening, reading and writing), June 2015, part of OCR A Level 2015. Migrated from the previous CGS website page `/past-papers-for-2015-session`.

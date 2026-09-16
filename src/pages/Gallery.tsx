@@ -18,7 +18,7 @@ export default function Gallery() {
   const items: LightboxItem[] = shown.map((g) => ({
     src: g.src,
     alt: g.alt,
-    caption: `${g.caption} — ${formatDateShort(g.date)}`,
+    caption: `${g.caption}, ${formatDateShort(g.date)}`,
     w: g.w,
     h: g.h,
   }));

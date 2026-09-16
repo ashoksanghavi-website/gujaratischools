@@ -1,5 +1,5 @@
 ---
-title: "Daily routine – Sanjeev’s"
+title: "Daily routine, Sanjeev’s"
 description: "File: Daily Routine Sanjeevs."
 audience: [Teachers]
 type: Teaching Materials
@@ -10,4 +10,4 @@ date: 2019-01-01
 source: resources-for-teachers
 tags: [Teaching Materials]
 ---
-Daily routine – Sanjeev’s. Migrated from the previous CGS website page `/resources-for-teachers`.
+Daily routine, Sanjeev’s. Migrated from the previous CGS website page `/resources-for-teachers`.

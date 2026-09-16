@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <>
       <Seo
-        title="Consortium of Gujarati Schools — Inspiring Gujarati teachers and students"
+        title="Consortium of Gujarati Schools, Inspiring Gujarati teachers and students"
         description="A UK educational charity supporting the teaching and learning of Gujarati for children aged 5 to 16. Past papers, training materials and exam guidance, free to download."
         path="/"
         jsonLd={organisationJsonLd}

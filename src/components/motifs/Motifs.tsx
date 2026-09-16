@@ -1,7 +1,7 @@
 import { useId } from "react";
 
 /* ============================================================
-   THE EXERCISE BOOK — motifs
+   THE EXERCISE BOOK, motifs
    These carry the theme. Each is decorative unless stated, so
    each is aria-hidden and contributes nothing to the a11y tree.
    ============================================================ */
@@ -34,7 +34,7 @@ export function RuledPaper({
 }
 
 /**
- * The margin rule — the site's signature line.
+ * The margin rule, the site's signature line.
  * Used in the hero, on article pages and beside the resource library.
  * Never everywhere.
  */
@@ -58,7 +58,7 @@ export function MarginRule({
   );
 }
 
-/* The kakko — the Gujarati alphabet, in teaching order. */
+/* The kakko, the Gujarati alphabet, in teaching order. */
 export const KAKKO = [
   "ક","ખ","ગ","ઘ","ચ","છ","જ","ઝ","ટ","ઠ","ડ","ઢ","ણ",
   "ત","થ","દ","ધ","ન","પ","ફ","બ","ભ","મ","ય","ર","લ",
@@ -88,7 +88,7 @@ export function Kakko({
 
 /**
  * A Gujarati letter drawn along its handwriting guide lines.
- * The site's one orchestrated motion moment — used once, in the hero.
+ * The site's one orchestrated motion moment, used once, in the hero.
  * When motion is off it renders as the finished letter, never blank.
  */
 export function TracedLetter({

@@ -1,5 +1,5 @@
 ---
-title: "Indicative content – Amas na tara"
+title: "Indicative content, Amas na tara"
 description: "Training, 21 July 2019. File: Indicative Content Amas Na Tara."
 audience: [Teachers]
 type: Training Materials
@@ -11,4 +11,4 @@ date: 2019-07-21
 source: training-on-21st-july-2019
 tags: [Training Materials]
 ---
-Indicative content – Amas na tara — part of Training, 21 July 2019. Migrated from the previous CGS website page `/training-on-21st-july-2019`.
+Indicative content, Amas na tara, part of Training, 21 July 2019. Migrated from the previous CGS website page `/training-on-21st-july-2019`.

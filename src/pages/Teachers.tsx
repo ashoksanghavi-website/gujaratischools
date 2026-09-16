@@ -19,7 +19,7 @@ const SHORTCUTS = [
   { label: "Exam information", to: "/resources?type=Exam+Information", type: "Exam Information" },
 ];
 
-/* Past papers as a year × exam matrix — the way a teacher actually
+/* Past papers as a year × exam matrix, the way a teacher actually
    remembers what they are looking for. */
 function PastPaperMatrix() {
   const papers = resources.filter((r) => r.type === "Past Papers" && r.year && r.exam);
@@ -69,7 +69,7 @@ function PastPaperMatrix() {
                       </Link>
                     ) : (
                       <span className="flex min-h-[44px] items-center justify-center text-ink-soft/40" aria-label="none">
-                        —
+                        -
                       </span>
                     )}
                   </td>
@@ -102,7 +102,7 @@ export default function Teachers() {
         tint
       />
 
-      {/* Shortcuts — four items, an even set. */}
+      {/* Shortcuts, four items, an even set. */}
       <section className="section-tight">
         <div className="container-cgs">
           <SectionHeader title="Go straight to" />

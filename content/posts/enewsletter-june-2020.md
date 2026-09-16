@@ -1,5 +1,5 @@
 ---
-title: e-Newsletter — June 2020
+title: e-Newsletter, June 2020
 date: 2020-06-15
 category: Newsletters
 excerpt: Introducing the new CGS WhatsApp group to help teachers stay connected and share ideas.

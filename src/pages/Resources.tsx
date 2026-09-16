@@ -215,7 +215,7 @@ export default function Resources() {
   return (
     <>
       <Seo
-        title="Resources — every CGS document in one place"
+        title="Resources, every CGS document in one place"
         description="Past papers, exam specifications, training packs, teaching material, newsletters and membership forms. Filter by audience, type, exam and year."
         path="/resources"
       />
@@ -228,7 +228,7 @@ export default function Resources() {
             <h1 className="text-h1">Resources</h1>
             <p className="mt-3 max-w-measure text-lead text-ink-soft">
               Every document CGS publishes, in one place. Filter by who it's for, what it is, and
-              which exam — or just search for what you remember.
+              which exam, or just search for what you remember.
             </p>
           </div>
         </div>
@@ -318,7 +318,7 @@ export default function Resources() {
             </div>
           )}
 
-          {/* Kakko quick jump — the cultural signature, doing real work. */}
+          {/* Kakko quick jump, the cultural signature, doing real work. */}
           {filtered.length > 12 && (
             <div className="scroll-x mt-5 border-y border-rule py-2">
               <div className="flex items-center gap-1" role="group" aria-label="Jump to a letter">

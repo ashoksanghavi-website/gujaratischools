@@ -3,7 +3,7 @@ import { photos } from "@/data/site";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 
 /* ============================================================
-   For parents — the leaf accent throughout, so a parent knows
+   For parents, the leaf accent throughout, so a parent knows
    at a glance that this part of the site is theirs.
    Four items in a 2×2 grid: an even set, no orphan.
    ============================================================ */

@@ -10,7 +10,7 @@ date: 2020-09-01
 tags: [Membership, Forms, Schools]
 ---
 
-This form helps CGS understand your school — how many students you teach, which levels you cover, and how we can best support you.
+This form helps CGS understand your school, how many students you teach, which levels you cover, and how we can best support you.
 
 ## How to complete
 

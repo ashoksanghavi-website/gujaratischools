@@ -12,4 +12,4 @@ date: 2020-01-01
 source: new-a-level-spec-and-sam
 tags: [Exam Specifications, A Level]
 ---
-New Gujarati A-levels — part of New A Level guidance. Migrated from the previous CGS website page `/new-a-level-spec-and-sam`.
+New Gujarati A-levels, part of New A Level guidance. Migrated from the previous CGS website page `/new-a-level-spec-and-sam`.

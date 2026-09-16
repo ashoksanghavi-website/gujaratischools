@@ -1,5 +1,5 @@
 ---
-title: e-Newsletter — August 2020
+title: e-Newsletter, August 2020
 date: 2020-08-15
 category: Newsletters
 excerpt: New GCSE and A-Level exam dates confirmed for Gujarati, plus updates from the Consortium.

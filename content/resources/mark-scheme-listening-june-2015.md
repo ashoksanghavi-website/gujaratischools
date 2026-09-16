@@ -1,5 +1,5 @@
 ---
-title: "Mark scheme – Listening – June 2015"
+title: "Mark scheme, Listening, June 2015"
 description: "OCR GCSE 2015. File: Mark scheme Unit A811 listening june."
 audience: [Teachers]
 type: Past Papers
@@ -14,4 +14,4 @@ date: 2015-06-01
 source: past-papers-for-2015-session-ocr-gcse
 tags: [Past Papers, GCSE, OCR, 2015]
 ---
-Mark scheme – Listening – June 2015 — part of OCR GCSE 2015. Migrated from the previous CGS website page `/past-papers-for-2015-session-ocr-gcse`.
+Mark scheme, Listening, June 2015, part of OCR GCSE 2015. Migrated from the previous CGS website page `/past-papers-for-2015-session-ocr-gcse`.

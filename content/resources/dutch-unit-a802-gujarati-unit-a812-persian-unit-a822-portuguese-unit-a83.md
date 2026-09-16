@@ -13,4 +13,4 @@ date: 2020-01-01
 source: ocr-gcse
 tags: [Exam Specifications, GCSE, OCR]
 ---
-Dutch Unit A802 gujarati Unit A812 persian Unit A822 portuguese Unit A832 and turkish Unit A842 speaking… — part of OCR GCSE specification. Migrated from the previous CGS website page `/ocr-gcse`.
+Dutch Unit A802 gujarati Unit A812 persian Unit A822 portuguese Unit A832 and turkish Unit A842 speaking…, part of OCR GCSE specification. Migrated from the previous CGS website page `/ocr-gcse`.

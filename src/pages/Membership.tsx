@@ -22,7 +22,7 @@ export default function Membership() {
         tint
       />
 
-      {/* Steps — four, an even set, and genuinely a sequence, so
+      {/* Steps, four, an even set, and genuinely a sequence, so
           numbering here carries real information. */}
       <section className="section">
         <div className="container-cgs">
@@ -112,7 +112,7 @@ export default function Membership() {
 
           <div className="mt-6 flex flex-col gap-4 rounded-lg border border-rule bg-marigold-soft p-6 md:flex-row md:items-center md:justify-between">
             <p className="max-w-measure text-ink">
-              Not ready to join? The whole resource library is free to everyone — no account, no
+              Not ready to join? The whole resource library is free to everyone, no account, no
               login.
             </p>
             <div className="flex shrink-0 flex-wrap gap-3">

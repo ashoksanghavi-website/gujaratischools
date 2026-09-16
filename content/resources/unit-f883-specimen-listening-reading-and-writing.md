@@ -13,4 +13,4 @@ date: 2020-01-01
 source: sample-assessment-materials-sams-for-ocr-a-level
 tags: [Exam Specifications, A Level, OCR]
 ---
-Unit F883 Specimen (Listening, reading and writing) — part of OCR A Level specification. Migrated from the previous CGS website page `/sample-assessment-materials-sams-for-ocr-a-level`.
+Unit F883 Specimen (Listening, reading and writing), part of OCR A Level specification. Migrated from the previous CGS website page `/sample-assessment-materials-sams-for-ocr-a-level`.

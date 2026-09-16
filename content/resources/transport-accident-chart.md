@@ -1,5 +1,5 @@
 ---
-title: "Transport – accident chart"
+title: "Transport, accident chart"
 description: "File: Transport Accident chart."
 audience: [Teachers]
 type: Teaching Materials
@@ -10,4 +10,4 @@ date: 2019-01-01
 source: resources-for-teachers
 tags: [Teaching Materials]
 ---
-Transport – accident chart. Migrated from the previous CGS website page `/resources-for-teachers`.
+Transport, accident chart. Migrated from the previous CGS website page `/resources-for-teachers`.

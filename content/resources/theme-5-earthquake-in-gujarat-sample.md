@@ -1,5 +1,5 @@
 ---
-title: "Theme 5 – Earthquake in Gujarat (sample)"
+title: "Theme 5, Earthquake in Gujarat (sample)"
 description: "File: Theme 5 Sample Earthquake in Gujarat."
 audience: [Teachers]
 type: Teaching Materials
@@ -10,4 +10,4 @@ date: 2020-01-01
 source: resources-for-gcse-theme-five
 tags: [Teaching Materials]
 ---
-Theme 5 – Earthquake in Gujarat (sample). Migrated from the previous CGS website page `/resources-for-gcse-theme-five`.
+Theme 5, Earthquake in Gujarat (sample). Migrated from the previous CGS website page `/resources-for-gcse-theme-five`.

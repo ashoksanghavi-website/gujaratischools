@@ -11,4 +11,4 @@ date: 2017-09-02
 source: training-on-2nd-september-2017
 tags: [Training Materials]
 ---
-Feedback summary — part of Training, 2 September 2017. Migrated from the previous CGS website page `/training-on-2nd-september-2017`.
+Feedback summary, part of Training, 2 September 2017. Migrated from the previous CGS website page `/training-on-2nd-september-2017`.

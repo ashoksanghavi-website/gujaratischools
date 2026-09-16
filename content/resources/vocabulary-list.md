@@ -13,4 +13,4 @@ date: 2020-01-01
 source: ocr-gcse
 tags: [Exam Specifications, GCSE, OCR]
 ---
-Vocabulary List — part of OCR GCSE specification. Migrated from the previous CGS website page `/ocr-gcse`.
+Vocabulary List, part of OCR GCSE specification. Migrated from the previous CGS website page `/ocr-gcse`.

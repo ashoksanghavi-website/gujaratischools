@@ -4,7 +4,7 @@ import { SectionHeader } from "@/components/ui/SectionHeader";
 import { resources } from "@/lib/content";
 
 /* ============================================================
-   What we do — feature plus grid.
+   What we do, feature plus grid.
    Not four identical boxes. The feature is Resources, because
    that is what people actually come for; the other three sit
    beneath it. The layout encodes a priority that is true.
@@ -24,7 +24,7 @@ export function WhatWeDo() {
         />
 
         <div className="grid gap-5 lg:grid-cols-3">
-          {/* Feature panel — spans two columns on desktop */}
+          {/* Feature panel, spans two columns on desktop */}
           <Link
             to={feature.to}
             className="group relative flex flex-col justify-between overflow-hidden rounded-lg border border-rule bg-paper-raised shadow-e1 transition-transform duration-base ease-out hover:-translate-y-1 motion-reduce:hover:translate-y-0 lg:col-span-2"

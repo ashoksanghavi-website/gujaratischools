@@ -1,12 +1,13 @@
 import { events, countByType, formatDateShort } from "@/lib/content";
 import { PageHero } from "@/components/ui/PageHero";
 import { SectionHeader } from "@/components/ui/SectionHeader";
-import { ButtonLink } from "@/components/ui/Button";
+import { EnquiryForm } from "@/components/ui/EnquiryForm";
+import { photos, forms } from "@/data/site";
 import { Link } from "react-router-dom";
 import { Seo } from "@/lib/seo";
 
 /* ============================================================
-   Become a Gujarati teacher — the recruitment / growth page.
+   Become a Gujarati teacher, the recruitment / growth page.
    Reframes teaching as accessible: you don't need to be qualified,
    CGS trains you. Directly addresses the falling teacher numbers
    by lowering the barrier to starting.
@@ -19,7 +20,7 @@ const STEPS = [
   },
   {
     title: "We train you",
-    body: "CGS runs teacher training on planning lessons, assessment, behaviour and the exam syllabus — so you teach with confidence from your first class.",
+    body: "CGS runs teacher training on planning lessons, assessment, behaviour and the exam syllabus, so you teach with confidence from your first class.",
   },
   {
     title: "You get the materials",
@@ -27,7 +28,7 @@ const STEPS = [
   },
   {
     title: "You join a network",
-    body: "You're not on your own — you join teachers across the UK who share what works, at schools run by temples and community groups.",
+    body: "You're not on your own, you join teachers across the UK who share what works, at schools run by temples and community groups.",
   },
 ];
 
@@ -55,10 +56,25 @@ export default function Teach() {
         breadcrumb={[{ to: "/", label: "Home" }]}
         kakko="શિ"
         tint
-      />
+      >
+        <div className="mt-6 flex flex-wrap gap-3">
+          <a
+            href="#apply"
+            className="inline-flex min-h-[52px] items-center rounded-pill bg-indigo px-7 font-semibold text-white transition-colors duration-fast hover:bg-indigo-deep"
+          >
+            Register your interest
+          </a>
+          <a
+            href="#how"
+            className="inline-flex min-h-[52px] items-center rounded-pill border border-rule-strong px-7 font-semibold text-indigo transition-colors duration-fast hover:border-indigo"
+          >
+            See how it works
+          </a>
+        </div>
+      </PageHero>
 
       {/* The reframe, as four reassuring steps */}
-      <section className="section">
+      <section id="how" className="section scroll-mt-24">
         <div className="container-cgs">
           <SectionHeader
             title="Teaching Gujarati is more within reach than you think"
@@ -122,7 +138,7 @@ export default function Teach() {
                 </ul>
               ) : (
                 <p className="mt-3 text-ink-soft">
-                  New training dates are announced through the year — join CGS to hear first.
+                  New training dates are announced through the year, join CGS to hear first.
                 </p>
               )}
               <Link to="/events" className="link-draw mt-4 inline-block font-semibold text-indigo">
@@ -133,22 +149,61 @@ export default function Teach() {
         </div>
       </section>
 
-      {/* The ask */}
-      <section className="section">
+      {/* The ask, a one-minute interest form, so applying is genuinely easy */}
+      <section id="apply" className="section scroll-mt-24">
         <div className="container-cgs">
-          <div className="rounded-lg border border-rule bg-marigold-soft p-8 text-center">
-            <h2 className="text-h2">Ready to start?</h2>
-            <p className="mx-auto mt-3 max-w-[52ch] text-lead text-ink-soft">
-              Join CGS as a member and we'll get you into training and teaching. It's the single most
-              useful thing you can do to keep Gujarati alive for the next generation.
-            </p>
-            <div className="mt-7 flex flex-wrap justify-center gap-3">
-              <ButtonLink to="/membership" size="lg" magnetic>
-                Become a member
-              </ButtonLink>
-              <ButtonLink to="/contact" size="lg" variant="quiet">
-                Ask us a question first
-              </ButtonLink>
+          <div className="grid gap-8 lg:grid-cols-[1fr_0.82fr] lg:items-start">
+            <div>
+              <h2 className="text-h2">Register your interest</h2>
+              <p className="mt-3 max-w-measure text-lead text-ink-soft">
+                It takes a minute and there's no commitment. Tell us a little about yourself and we'll
+                be in touch about training and your nearest school.
+              </p>
+              <div className="mt-6 rounded-lg border border-rule bg-paper-raised p-6 shadow-e1">
+                <EnquiryForm
+                  kind="teach"
+                  subject="I'd like to teach Gujarati"
+                  sendTo={forms.teachTo}
+                  compact
+                />
+              </div>
+              <p className="mt-4 text-small text-ink-soft">
+                Ready to go further?{" "}
+                <Link to="/membership" className="link-draw font-semibold text-indigo">
+                  Become a member
+                </Link>{" "}
+                or{" "}
+                <Link to="/contact" className="link-draw font-semibold text-indigo">
+                  ask us a question first
+                </Link>
+                .
+              </p>
+            </div>
+
+            <div className="lg:sticky lg:top-[140px]">
+              <figure>
+                <img
+                  src={photos.speaking2020}
+                  alt="Gujarati teachers at a CGS training session"
+                  width={1200}
+                  height={800}
+                  loading="lazy"
+                  decoding="async"
+                  className="w-full rounded-lg border border-rule object-cover"
+                  style={{ aspectRatio: "4 / 3" }}
+                />
+              </figure>
+              <div
+                className="mt-4 rounded-lg border border-rule bg-marigold-soft p-6"
+                style={{ borderLeftColor: "var(--marigold)", borderLeftWidth: 4 }}
+              >
+                <p className="font-display text-h3 leading-snug text-ink">
+                  Most of our teachers started exactly where you are.
+                </p>
+                <p className="mt-2 text-small text-ink-soft">
+                  Parents and volunteers, trained by CGS to teach with confidence.
+                </p>
+              </div>
             </div>
           </div>
         </div>

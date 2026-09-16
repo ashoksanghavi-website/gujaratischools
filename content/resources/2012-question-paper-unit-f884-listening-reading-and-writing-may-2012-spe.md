@@ -1,5 +1,5 @@
 ---
-title: "2012 Question paper – Unit F884 (Listening, reading and writing) – May 2012 – special sheet"
+title: "2012 Question paper, Unit F884 (Listening, reading and writing), May 2012, special sheet"
 description: "OCR A Level 2012. File: Question paper Unit F884 listening reading and writing 2 special sheet."
 audience: [Teachers]
 type: Past Papers
@@ -14,4 +14,4 @@ date: 2012-06-01
 source: past-papers-for-2012-session
 tags: [Past Papers, A Level, OCR, 2012]
 ---
-2012 Question paper – Unit F884 (Listening, reading and writing) – May 2012 – special sheet — part of OCR A Level 2012. Migrated from the previous CGS website page `/past-papers-for-2012-session`.
+2012 Question paper, Unit F884 (Listening, reading and writing), May 2012, special sheet, part of OCR A Level 2012. Migrated from the previous CGS website page `/past-papers-for-2012-session`.

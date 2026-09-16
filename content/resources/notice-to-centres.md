@@ -13,4 +13,4 @@ date: 2020-01-01
 source: ocr-a-level
 tags: [Exam Specifications, A Level, OCR]
 ---
-Notice to Centres — part of OCR A Level specification. Migrated from the previous CGS website page `/ocr-a-level`.
+Notice to Centres, part of OCR A Level specification. Migrated from the previous CGS website page `/ocr-a-level`.

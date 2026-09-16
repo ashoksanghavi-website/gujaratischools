@@ -11,4 +11,4 @@ date: 2016-11-12
 source: training-on-12th-november-2016
 tags: [Training Materials]
 ---
-Listening and speaking — part of Training, 12 November 2016. Migrated from the previous CGS website page `/training-on-12th-november-2016`.
+Listening and speaking, part of Training, 12 November 2016. Migrated from the previous CGS website page `/training-on-12th-november-2016`.

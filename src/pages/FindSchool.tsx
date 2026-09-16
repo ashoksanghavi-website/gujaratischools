@@ -5,6 +5,7 @@ import { Chip } from "@/components/ui/Badge";
 import { Button, ButtonLink } from "@/components/ui/Button";
 import { EmptyState } from "@/components/ui/SectionHeader";
 import { IconSearch, IconClose, IconMail, IconPhone } from "@/components/ui/Icons";
+import { SchoolEnquiryModal } from "@/components/resources/SchoolEnquiryModal";
 import { contact } from "@/data/site";
 import { Seo } from "@/lib/seo";
 
@@ -16,8 +17,7 @@ import { Seo } from "@/lib/seo";
    a markdown file the committee can add to or correct.
    ============================================================ */
 
-function SchoolCard({ s }: { s: School }) {
-  const hasDetail = s.address || s.contact || s.when;
+function SchoolCard({ s, onEnquire }: { s: School; onEnquire: (s: School) => void }) {
   return (
     <li className="flex h-full flex-col rounded-md border border-rule bg-paper-raised p-5">
       <h3 className="text-[1.0625rem] font-semibold leading-snug text-ink">{s.name}</h3>
@@ -40,11 +40,15 @@ function SchoolCard({ s }: { s: School }) {
       {s.when && <p className="mt-3 text-small text-ink-soft">🕑 {s.when}</p>}
       {s.contact && <p className="mt-2 text-small text-ink-soft">{s.contact}</p>}
 
-      {!hasDetail && (
-        <p className="mt-auto pt-4 text-small text-ink-soft">
-          Contact CGS and we'll connect you to this school.
-        </p>
-      )}
+      <div className="mt-auto pt-5">
+        <button
+          type="button"
+          onClick={() => onEnquire(s)}
+          className="inline-flex min-h-[44px] w-full items-center justify-center gap-2 rounded-pill bg-leaf px-4 text-small font-semibold text-white transition-colors duration-fast hover:brightness-95"
+        >
+          Enquire about this school
+        </button>
+      </div>
     </li>
   );
 }
@@ -52,6 +56,7 @@ function SchoolCard({ s }: { s: School }) {
 export default function FindSchool() {
   const [q, setQ] = useState("");
   const [region, setRegion] = useState("");
+  const [enquiry, setEnquiry] = useState<School | null>(null);
 
   const filtered = useMemo(() => {
     const term = q.trim().toLowerCase();
@@ -101,7 +106,7 @@ export default function FindSchool() {
             type="search"
             value={q}
             onChange={(e) => setQ(e.target.value)}
-            placeholder="Search by town, area or postcode — e.g. “Wembley”, “Luton”, “HA0”"
+            placeholder="Search by town, area or postcode, e.g. “Wembley”, “Luton”, “HA0”"
             className="min-h-[56px] w-full min-w-0 flex-1 bg-transparent outline-none placeholder:text-ink-soft/70"
           />
           {q && (
@@ -175,7 +180,7 @@ export default function FindSchool() {
                 </h2>
                 <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
                   {g.items.map((s) => (
-                    <SchoolCard key={s.slug} s={s} />
+                    <SchoolCard key={s.slug} s={s} onEnquire={setEnquiry} />
                   ))}
                 </ul>
               </section>
@@ -192,7 +197,7 @@ export default function FindSchool() {
             <h2 className="text-h3">Can't find a class near you?</h2>
             <p className="mt-2 text-ink-soft">
               New schools open as new teachers come forward. Get in touch and we'll point you to your
-              nearest class — or help start one.
+              nearest class, or help start one.
             </p>
             <div className="mt-5 flex flex-wrap gap-3">
               <a
@@ -227,6 +232,8 @@ export default function FindSchool() {
           </div>
         </div>
       </div>
+
+      <SchoolEnquiryModal school={enquiry} onClose={() => setEnquiry(null)} />
     </>
   );
 }

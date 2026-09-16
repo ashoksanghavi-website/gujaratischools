@@ -8,7 +8,7 @@ import { Seo } from "@/lib/seo";
 import { site } from "@/data/site";
 
 /* ============================================================
-   Article page — news and events share this.
+   Article page, news and events share this.
    Generous measure, the margin rule down the left, a clear date
    and category, attachments listed as proper resource rows, an
    optional gallery with a lightbox, and related posts at the end.

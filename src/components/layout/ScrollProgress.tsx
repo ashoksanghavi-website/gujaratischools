@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
    Scroll progress as a pencil line.
    A thin marigold rule across the top that fills as the page
    progresses. On long article and resource pages it doubles as a
-   reading indicator. Transform only — never animates width.
+   reading indicator. Transform only, never animates width.
    ============================================================ */
 
 export function ScrollProgress() {

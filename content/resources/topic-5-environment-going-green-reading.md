@@ -1,5 +1,5 @@
 ---
-title: "Topic 5 – Environment – Going Green – Reading"
+title: "Topic 5, Environment, Going Green, Reading"
 description: "New A Level guidance. File: Topic 5 Environment Going Green Reading."
 audience: [Teachers]
 type: Exam Specifications
@@ -12,4 +12,4 @@ date: 2020-01-01
 source: new-a-level-spec-and-sam
 tags: [Exam Specifications, A Level]
 ---
-Topic 5 – Environment – Going Green – Reading — part of New A Level guidance. Migrated from the previous CGS website page `/new-a-level-spec-and-sam`.
+Topic 5, Environment, Going Green, Reading, part of New A Level guidance. Migrated from the previous CGS website page `/new-a-level-spec-and-sam`.

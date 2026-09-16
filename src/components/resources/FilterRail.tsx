@@ -2,7 +2,7 @@ import { IndexTab } from "@/components/motifs/Motifs";
 import { audienceAccent } from "@/components/ui/Badge";
 
 /* ============================================================
-   Filter rail — styled as the tabbed dividers in a ring binder,
+   Filter rail, styled as the tabbed dividers in a ring binder,
    because that is what it is: a way of flipping straight to a
    section. Each tab shows how many documents are behind it, so
    nobody taps into an empty view.

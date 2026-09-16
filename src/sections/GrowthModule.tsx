@@ -3,7 +3,7 @@ import { schools, schoolTownCount, countByType } from "@/lib/content";
 import { IconArrow } from "@/components/ui/Icons";
 
 /* ============================================================
-   Growth module — the band directly below the hero.
+   Growth module, the band directly below the hero.
    The site's answer to falling numbers: two clear human pathways,
    one that brings in new students and one that brings in new
    teachers. Everything else on the home page supports these two.
@@ -26,7 +26,7 @@ const PATHS = [
     key: "teach",
     kicker: "For parents and volunteers",
     title: "Teach Gujarati",
-    line: "You don't need to be qualified — we train you.",
+    line: "You don't need to be qualified, we train you.",
     body: "Most CGS teachers are parents and volunteers. We train you to teach with confidence and give you every lesson resource, free.",
     to: "/teach",
     cta: "Become a teacher",
@@ -50,7 +50,7 @@ export function GrowthModule() {
           </p>
         </div>
 
-        {/* Two large pathways — an even set, always a clean 2-up. */}
+        {/* Two large pathways, an even set, always a clean 2-up. */}
         <div className="grid gap-5 md:grid-cols-2">
           {PATHS.map((p) => (
             <Link

@@ -1,5 +1,5 @@
 ---
-title: "Examiners reports – June 2017"
+title: "Examiners reports, June 2017"
 description: "OCR A Level 2017. File: Examiners report june."
 audience: [Teachers]
 type: Past Papers
@@ -14,4 +14,4 @@ date: 2017-06-01
 source: past-papers-for-2017-session
 tags: [Past Papers, A Level, OCR, 2017]
 ---
-Examiners reports – June 2017 — part of OCR A Level 2017. Migrated from the previous CGS website page `/past-papers-for-2017-session`.
+Examiners reports, June 2017, part of OCR A Level 2017. Migrated from the previous CGS website page `/past-papers-for-2017-session`.

@@ -1,5 +1,5 @@
 ---
-title: "Mark scheme – Speaking – Unit A812 – June 2013"
+title: "Mark scheme, Speaking, Unit A812, June 2013"
 description: "OCR GCSE 2013. File: Mark scheme Unit A812 speaking june."
 audience: [Teachers]
 type: Past Papers
@@ -14,4 +14,4 @@ date: 2013-06-01
 source: past-papers-for-2013-session-ocr-gcse
 tags: [Past Papers, GCSE, OCR, 2013]
 ---
-Mark scheme – Speaking – Unit A812 – June 2013 — part of OCR GCSE 2013. Migrated from the previous CGS website page `/past-papers-for-2013-session-ocr-gcse`.
+Mark scheme, Speaking, Unit A812, June 2013, part of OCR GCSE 2013. Migrated from the previous CGS website page `/past-papers-for-2013-session-ocr-gcse`.

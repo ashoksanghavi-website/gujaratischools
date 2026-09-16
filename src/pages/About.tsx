@@ -55,7 +55,7 @@ export default function About() {
         </div>
       </section>
 
-      {/* The four aims — an even set, so a 2×2 grid fills exactly. */}
+      {/* The four aims, an even set, so a 2×2 grid fills exactly. */}
       <section className="relative section border-y border-rule bg-paper-tint" aria-labelledby="aims">
         <RuledPaper soft />
         <div className="container-cgs relative">
@@ -88,7 +88,7 @@ export default function About() {
         </div>
       </section>
 
-      {/* Facts — real figures only, taken from the charity's own account. */}
+      {/* Facts, real figures only, taken from the charity's own account. */}
       <section className="section" aria-labelledby="facts">
         <div className="container-cgs">
           <SectionHeader id="facts" title="The Consortium in numbers" />

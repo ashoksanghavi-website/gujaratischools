@@ -2,7 +2,7 @@ import { mission } from "@/data/site";
 import { Kakko, RuledPaper } from "@/components/motifs/Motifs";
 
 /* ============================================================
-   Mission band — the aim, set large, on ruled paper with a kakko
+   Mission band, the aim, set large, on ruled paper with a kakko
    watermark behind it. One of only three reveal moments on the
    home page.
    ============================================================ */

@@ -20,4 +20,4 @@ The guidance clarifies expectations for extended writing and for the speaking as
 - Plan speaking practice throughout the year rather than leaving it to the end.
 - Use past papers and mark schemes from the Resources library to benchmark student work.
 
-If you would like support applying these guidelines in your school, please [get in touch](/contact) — CGS runs training sessions for teachers throughout the year.
+If you would like support applying these guidelines in your school, please [get in touch](/contact), CGS runs training sessions for teachers throughout the year.

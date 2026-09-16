@@ -11,7 +11,7 @@ import { Seo } from "@/lib/seo";
    For parents.
    Plain English, leaf accent throughout so a parent knows this
    part of the site is theirs, and deliberately separated from
-   teacher content — mixing the two is a real cause of the
+   teacher content, mixing the two is a real cause of the
    navigation complaint.
    ============================================================ */
 

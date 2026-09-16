@@ -12,4 +12,4 @@ date: 2020-01-01
 source: new-a-level-spec-and-sam
 tags: [Exam Specifications, A Level]
 ---
-Role-play and picture-based training — part of New A Level guidance. Migrated from the previous CGS website page `/new-a-level-spec-and-sam`.
+Role-play and picture-based training, part of New A Level guidance. Migrated from the previous CGS website page `/new-a-level-spec-and-sam`.

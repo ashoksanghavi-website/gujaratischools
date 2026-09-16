@@ -1,5 +1,5 @@
 ---
-title: e-Newsletter — April 2020 — Welcome to CGS
+title: e-Newsletter, April 2020, Welcome to CGS
 date: 2020-04-15
 category: Newsletters
 excerpt: The first e-Newsletter welcoming members to the Consortium of Gujarati Schools and setting out what we do.

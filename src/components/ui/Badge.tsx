@@ -1,6 +1,6 @@
 /* ============================================================
-   Badge — a static label describing a thing (audience, file type).
-   Chip  — an interactive, removable filter token.
+   Badge, a static label describing a thing (audience, file type).
+   Chip , an interactive, removable filter token.
    These are different components because they do different jobs:
    a badge is never clickable, a chip always is.
    ============================================================ */

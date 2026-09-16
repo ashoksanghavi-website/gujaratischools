@@ -5,7 +5,7 @@ import { ActionTile } from "@/components/ui/Card";
 import { IconDownload } from "@/components/ui/Icons";
 
 /* ============================================================
-   Featured resources — the six most requested documents, with a
+   Featured resources, the six most requested documents, with a
    "View all" tile completing the row (Part 4's third orphan
    strategy). Membership forms and exam specifications first,
    because those are what people ask for most.
@@ -18,16 +18,18 @@ const WANTED = [
   "Training Materials",
 ];
 
+/* Five real cards + the "View all" tile = six, so the 3-column grid
+   fills exactly two rows with no orphan. */
 function pick() {
   const out: typeof resources = [];
   for (const type of WANTED) {
     for (const r of resources.filter((x) => x.type === type)) {
-      if (out.length >= 6) break;
+      if (out.length >= 5) break;
       if (!out.some((o) => o.title === r.title)) out.push(r);
       if (out.filter((o) => o.type === type).length >= 2) break;
     }
   }
-  return out.slice(0, 6);
+  return out.slice(0, 5);
 }
 
 export function FeaturedResources() {
@@ -44,8 +46,7 @@ export function FeaturedResources() {
           action={{ to: "/resources", label: "All resources" }}
         />
 
-        {/* 6 items + 1 tile = 7; a 4-column grid would orphan, so this is
-            an explicit 3-across layout with the tile completing row two. */}
+        {/* 5 cards + 1 tile = 6 → two clean rows of three, no orphan. */}
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {items.map((r) => (
             <Link
@@ -68,7 +69,7 @@ export function FeaturedResources() {
           <ActionTile
             to="/resources"
             title="View all resources"
-            body={`${resources.length} documents — ${countByType("Past Papers")} past papers, ${countByType("Training Materials")} training files.`}
+            body={`${resources.length} documents, ${countByType("Past Papers")} past papers, ${countByType("Training Materials")} training files.`}
           />
         </div>
       </div>

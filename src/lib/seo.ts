@@ -31,7 +31,7 @@ export function useSeo(opts: {
   useEffect(() => {
     const full = title.includes("CGS") || title.includes("Consortium")
       ? title
-      : `${title} — Consortium of Gujarati Schools`;
+      : `${title}, Consortium of Gujarati Schools`;
     document.title = full;
     if (description) {
       setMeta("name", "description", description);

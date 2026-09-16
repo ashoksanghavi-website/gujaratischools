@@ -40,7 +40,7 @@ export default function Rules() {
 
       <div className="container-cgs py-8">
         <div className="grid gap-8 lg:grid-cols-[14rem_1fr] lg:items-start">
-          {/* Chapter rail — a usability win on a long page, not decoration. */}
+          {/* Chapter rail, a usability win on a long page, not decoration. */}
           <nav aria-label="On this page" className="lg:sticky lg:top-[140px]">
             <p className="mb-3 text-small font-semibold text-ink">On this page</p>
             <ul className="flex flex-col gap-1 border-l border-rule">

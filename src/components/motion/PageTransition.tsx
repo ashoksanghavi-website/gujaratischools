@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { useMotionAllowed, EASE_OUT, EASE_IN_OUT, T_BASE, T_FAST } from "@/lib/motion";
 
 /* ============================================================
-   Page transition — the paper turn.
+   Page transition, the paper turn.
    Out: shift up 12px and fade over 180ms.
    In:  fade and settle from 12px below over 320ms.
    The header stays put throughout, so navigation never feels

@@ -1,5 +1,5 @@
 ---
-title: "Unit F884 Mark scheme (Listening, reading and writing) – June 2013"
+title: "Unit F884 Mark scheme (Listening, reading and writing), June 2013"
 description: "OCR A Level 2013. File: Mark scheme Unit F884 listening reading and writing 2 june."
 audience: [Teachers]
 type: Past Papers
@@ -14,4 +14,4 @@ date: 2013-06-01
 source: past-papers-for-2013-session
 tags: [Past Papers, A Level, OCR, 2013]
 ---
-Unit F884 Mark scheme (Listening, reading and writing) – June 2013 — part of OCR A Level 2013. Migrated from the previous CGS website page `/past-papers-for-2013-session`.
+Unit F884 Mark scheme (Listening, reading and writing), June 2013, part of OCR A Level 2013. Migrated from the previous CGS website page `/past-papers-for-2013-session`.

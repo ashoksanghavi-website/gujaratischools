@@ -11,4 +11,4 @@ date: 2018-10-27
 source: training-on-27th-october-2018
 tags: [Training Materials]
 ---
-Course material from the training event Title page for the pack — part of Training, 27 October 2018. Migrated from the previous CGS website page `/training-on-27th-october-2018`.
+Course material from the training event Title page for the pack, part of Training, 27 October 2018. Migrated from the previous CGS website page `/training-on-27th-october-2018`.

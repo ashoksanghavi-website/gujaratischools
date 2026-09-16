@@ -116,7 +116,7 @@ export default function Committee() {
     <>
       <Seo
         title="Committee"
-        description="The Consortium of Gujarati Schools committee for 2024–2026, and the previous term."
+        description="The Consortium of Gujarati Schools committee for 2024-2026, and the previous term."
         path="/about/committee"
       />
 

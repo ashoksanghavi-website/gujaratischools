@@ -1,5 +1,5 @@
 ---
-title: "Question paper (Listening, reading and writing) – June 2018 – Special sheet"
+title: "Question paper (Listening, reading and writing), June 2018, Special sheet"
 description: "OCR A Level 2018. File: Question paper Unit F884/01 listening reading and writing 2 special sheet."
 audience: [Teachers]
 type: Past Papers
@@ -14,4 +14,4 @@ date: 2018-06-01
 source: past-papers-for-2018-session
 tags: [Past Papers, A Level, OCR, 2018]
 ---
-Question paper (Listening, reading and writing) – June 2018 – Special sheet — part of OCR A Level 2018. Migrated from the previous CGS website page `/past-papers-for-2018-session`.
+Question paper (Listening, reading and writing), June 2018, Special sheet, part of OCR A Level 2018. Migrated from the previous CGS website page `/past-papers-for-2018-session`.

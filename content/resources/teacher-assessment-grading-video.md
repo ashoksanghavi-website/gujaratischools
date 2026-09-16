@@ -1,5 +1,5 @@
 ---
-title: Teacher Assessment Grading — Training Video
+title: Teacher Assessment Grading, Training Video
 description: Watch the CGS training on Teacher Assessment Grading for GCSE Gujarati (20 April 2021).
 audience: [Teachers]
 type: Videos

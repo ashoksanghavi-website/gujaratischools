@@ -1,5 +1,5 @@
 ---
-title: "Question paper (Listening, reading and writing) – June 2014 – Listening instructions"
+title: "Question paper (Listening, reading and writing), June 2014, Listening instructions"
 description: "OCR A Level 2014. File: Question paper Unit F883/01 listening reading and writing 1 listening instructions."
 audience: [Teachers]
 type: Past Papers
@@ -14,4 +14,4 @@ date: 2014-06-01
 source: past-papers-for-2014-session
 tags: [Past Papers, A Level, OCR, 2014]
 ---
-Question paper (Listening, reading and writing) – June 2014 – Listening instructions — part of OCR A Level 2014. Migrated from the previous CGS website page `/past-papers-for-2014-session`.
+Question paper (Listening, reading and writing), June 2014, Listening instructions, part of OCR A Level 2014. Migrated from the previous CGS website page `/past-papers-for-2014-session`.

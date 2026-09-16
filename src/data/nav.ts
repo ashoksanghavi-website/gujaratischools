@@ -23,7 +23,7 @@ export const primaryNav: NavItem[] = [
   { label: "Teachers", to: "/teachers" },
   { label: "Parents", to: "/parents" },
   { label: "Resources", to: "/resources" },
-  { label: "News & events", to: "/news" },
+  { label: "News", to: "/news" },
   { label: "Membership", to: "/membership" },
   { label: "Contact", to: "/contact" },
 ];
@@ -66,7 +66,7 @@ export const megaFor: Record<string, MegaColumn[]> = {
     {
       heading: "Start here",
       items: [
-        { label: "Become a teacher", to: "/teach", description: "New to teaching? We train you — no qualification needed" },
+        { label: "Become a teacher", to: "/teach", description: "New to teaching? We train you, no qualification needed" },
         { label: "Teacher hub", to: "/teachers", description: "Training, exams and classroom material" },
         { label: "Training events", to: "/events" },
         { label: "Become a member", to: "/membership" },
@@ -98,7 +98,7 @@ export const footerExplore: NavItem[] = [
   { label: "Become a teacher", to: "/teach" },
   { label: "Rules & objects", to: "/about/rules" },
   { label: "Committee", to: "/about/committee" },
-  { label: "News & events", to: "/news" },
+  { label: "News", to: "/news" },
   { label: "Photo gallery", to: "/gallery" },
 ];
 

@@ -5,7 +5,7 @@ import { IconDownload } from "@/components/ui/Icons";
 
 /* ============================================================
    Membership and newsletter.
-   Three forms as direct downloads — an odd count, so this is a
+   Three forms as direct downloads, an odd count, so this is a
    three-column grid that fills exactly, then the newsletter sits
    in its own band beneath rather than orphaning a fourth cell.
    ============================================================ */

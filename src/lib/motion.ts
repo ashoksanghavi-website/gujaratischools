@@ -23,7 +23,7 @@ export function useMotionAllowed(): boolean {
   return !reduced && !lowPower;
 }
 
-/** Motion allowed *and* a fine pointer — for magnetic buttons and hover-only flourishes. */
+/** Motion allowed *and* a fine pointer, for magnetic buttons and hover-only flourishes. */
 export function useFinePointerMotion(): boolean {
   const allowed = useMotionAllowed();
   const touch = useTouch();

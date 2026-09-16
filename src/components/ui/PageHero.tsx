@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Kakko, RuledPaper } from "@/components/motifs/Motifs";
 
 /* ============================================================
-   Page header — one component so every interior page opens at
+   Page header, one component so every interior page opens at
    the same rhythm. The margin rule marks "this is a page you
    read"; the kakko watermark is optional and used sparingly.
    ============================================================ */

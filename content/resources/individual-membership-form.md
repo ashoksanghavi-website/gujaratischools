@@ -10,7 +10,7 @@ date: 2020-08-01
 tags: [Membership, Forms]
 ---
 
-Use this form to join the Consortium of Gujarati Schools as an **individual** — a teacher, parent or supporter of Gujarati education.
+Use this form to join the Consortium of Gujarati Schools as an **individual**, a teacher, parent or supporter of Gujarati education.
 
 ## How to join
 

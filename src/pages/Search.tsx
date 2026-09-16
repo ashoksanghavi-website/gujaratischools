@@ -58,7 +58,7 @@ export default function Search() {
           <div className="mt-6">
             <EmptyState
               title={`Nothing matched “${q}”`}
-              body="Try a shorter or more general word — for example “past paper” rather than a full document title."
+              body="Try a shorter or more general word, for example “past paper” rather than a full document title."
               action={<ButtonLink to="/resources" variant="secondary">Browse all resources</ButtonLink>}
             />
           </div>

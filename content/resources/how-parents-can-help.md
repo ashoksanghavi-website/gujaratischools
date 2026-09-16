@@ -13,9 +13,9 @@ Children learn language best when it is part of everyday life. This resource off
 
 ## A few ideas to begin with
 
-- Talk to your child in Gujarati during everyday routines — mealtimes, bath time, getting dressed.
+- Talk to your child in Gujarati during everyday routines, mealtimes, bath time, getting dressed.
 - Sing Gujarati songs and rhymes together.
 - Name things around the home in Gujarati.
 - Read Gujarati picture books and tell family stories.
 
-Every small moment adds up. You do not need to be a teacher — you just need to share the language you love.
+Every small moment adds up. You do not need to be a teacher, you just need to share the language you love.

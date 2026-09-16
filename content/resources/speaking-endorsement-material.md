@@ -1,5 +1,5 @@
 ---
-title: Speaking Endorsement — Course Material
+title: Speaking Endorsement, Course Material
 description: Training material on the Speaking Endorsement for Gujarati, from the 28 November 2020 teacher training session.
 audience: [Teachers]
 type: Training Materials

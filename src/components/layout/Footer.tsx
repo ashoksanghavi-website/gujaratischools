@@ -5,7 +5,7 @@ import { RuledPaper } from "@/components/motifs/Motifs";
 import { IconFacebook, IconTwitter, IconYoutube, IconDownload, IconExternal } from "@/components/ui/Icons";
 
 /* ============================================================
-   Footer — four columns plus a base row, on warm paper.
+   Footer, four columns plus a base row, on warm paper.
    Column three carries the most-requested documents as direct
    downloads, because that is what people come to the footer for.
    ============================================================ */
@@ -19,7 +19,7 @@ export function Footer() {
 
       <div className="container-cgs relative py-section-sm">
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-          {/* 1 — identity */}
+          {/* 1, identity */}
           <div>
             <img
               src="/images/logo/cgs-logo-colour.png"
@@ -64,7 +64,7 @@ export function Footer() {
             </div>
           </div>
 
-          {/* 2 — explore */}
+          {/* 2, explore */}
           <nav aria-labelledby="footer-explore">
             <h2 id="footer-explore" className="text-small font-semibold text-ink">
               Explore
@@ -80,7 +80,7 @@ export function Footer() {
             </ul>
           </nav>
 
-          {/* 3 — the documents people actually come for */}
+          {/* 3, the documents people actually come for */}
           <nav aria-labelledby="footer-forms">
             <h2 id="footer-forms" className="text-small font-semibold text-ink">
               Forms &amp; specifications
@@ -119,7 +119,7 @@ export function Footer() {
             </ul>
           </nav>
 
-          {/* 4 — contact + newsletter */}
+          {/* 4, contact + newsletter */}
           <div>
             <h2 className="text-small font-semibold text-ink">Get in touch</h2>
             <address className="mt-4 not-italic text-small text-ink-soft">

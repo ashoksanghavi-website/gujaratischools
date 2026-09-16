@@ -1,5 +1,5 @@
 ---
-title: "Unti A813 – Reading specimen"
+title: "Unti A813, Reading specimen"
 description: "OCR GCSE specification. File: Unit A813 reading specimen."
 audience: [Teachers, Leaders]
 type: Exam Specifications
@@ -13,4 +13,4 @@ date: 2020-01-01
 source: sample-assessment-material-sam
 tags: [Exam Specifications, GCSE, OCR]
 ---
-Unti A813 – Reading specimen — part of OCR GCSE specification. Migrated from the previous CGS website page `/sample-assessment-material-sam`.
+Unti A813, Reading specimen, part of OCR GCSE specification. Migrated from the previous CGS website page `/sample-assessment-material-sam`.

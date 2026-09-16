@@ -4,7 +4,7 @@ import { SectionHeader } from "@/components/ui/SectionHeader";
 import { Badge } from "@/components/ui/Badge";
 
 /* ============================================================
-   Latest news — one feature plus two.
+   Latest news, one feature plus two.
    A three-item set in a plain grid would be fine, but the feature
    layout matches how people read a news page: one thing first.
    ============================================================ */

@@ -62,7 +62,7 @@ export function MegaMenu({
           </div>
         ))}
 
-        {/* Recently added — keeps the panel alive without maintenance. */}
+        {/* Recently added, keeps the panel alive without maintenance. */}
         <div className="relative">
           <p id="mega-recent" className="mb-4 text-small font-semibold text-ink-soft">Recently added</p>
           <ul className="flex flex-col gap-3" aria-labelledby="mega-recent">

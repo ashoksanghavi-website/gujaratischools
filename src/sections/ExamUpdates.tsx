@@ -3,7 +3,7 @@ import { VideoEmbed } from "@/components/ui/VideoEmbed";
 import { IconExternal } from "@/components/ui/Icons";
 
 /* ============================================================
-   Exam updates — a notice panel, not a card.
+   Exam updates, a notice panel, not a card.
    This is time-sensitive information a teacher must not miss, so
    it gets the kumkum edge that is used nowhere else on the page.
    ============================================================ */

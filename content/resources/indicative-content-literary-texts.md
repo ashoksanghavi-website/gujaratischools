@@ -1,5 +1,5 @@
 ---
-title: "Indicative content – Literary texts"
+title: "Indicative content, Literary texts"
 description: "New A Level guidance. File: Indicative questions Literary Texts."
 audience: [Teachers]
 type: Exam Specifications
@@ -12,4 +12,4 @@ date: 2020-01-01
 source: new-a-level-guidelines
 tags: [Exam Specifications, A Level]
 ---
-Indicative content – Literary texts — part of New A Level guidance. Migrated from the previous CGS website page `/new-a-level-guidelines`.
+Indicative content, Literary texts, part of New A Level guidance. Migrated from the previous CGS website page `/new-a-level-guidelines`.

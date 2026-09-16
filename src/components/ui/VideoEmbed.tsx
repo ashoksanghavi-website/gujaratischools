@@ -2,7 +2,7 @@ import { useState } from "react";
 
 /* ============================================================
    YouTube with a click-to-load facade.
-   Nothing is requested from YouTube — and no cookie is set —
+   Nothing is requested from YouTube, and no cookie is set -
    until the person chooses to play. Keeps the page fast and
    avoids setting third-party cookies without consent.
    ============================================================ */

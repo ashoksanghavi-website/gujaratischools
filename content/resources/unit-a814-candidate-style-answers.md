@@ -1,5 +1,5 @@
 ---
-title: "Unit A814 – Candidate style answers"
+title: "Unit A814, Candidate style answers"
 description: "OCR GCSE specification. File: Unit A814 candidate style answers."
 audience: [Teachers, Leaders]
 type: Exam Specifications
@@ -13,4 +13,4 @@ date: 2020-01-01
 source: ocr-gcse
 tags: [Exam Specifications, GCSE, OCR]
 ---
-Unit A814 – Candidate style answers — part of OCR GCSE specification. Migrated from the previous CGS website page `/ocr-gcse`.
+Unit A814, Candidate style answers, part of OCR GCSE specification. Migrated from the previous CGS website page `/ocr-gcse`.

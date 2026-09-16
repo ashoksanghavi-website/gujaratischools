@@ -1,5 +1,5 @@
 ---
-title: Teacher Training — 21 July 2019, Oshwal Ekta Centre
+title: Teacher Training, 21 July 2019, Oshwal Ekta Centre
 date: 2019-07-21
 category: Training Events
 excerpt: A teacher training day held at the Oshwal Ekta Centre, bringing Gujarati teachers together for professional development.

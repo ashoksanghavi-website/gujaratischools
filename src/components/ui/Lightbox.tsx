@@ -2,7 +2,7 @@ import { useCallback, useEffect, useRef } from "react";
 import { createPortal } from "react-dom";
 
 /* ============================================================
-   Lightbox — accessible image viewer.
+   Lightbox, accessible image viewer.
    Modal dialog semantics, focus trapped while open, Escape and
    arrow keys work, focus returns to the trigger on close, and
    background scroll is locked.

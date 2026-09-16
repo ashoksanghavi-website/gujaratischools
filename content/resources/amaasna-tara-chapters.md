@@ -12,4 +12,4 @@ date: 2020-01-01
 source: new-a-level-guidelines
 tags: [Exam Specifications, A Level]
 ---
-Amaasna tara chapters — part of New A Level guidance. Migrated from the previous CGS website page `/new-a-level-guidelines`.
+Amaasna tara chapters, part of New A Level guidance. Migrated from the previous CGS website page `/new-a-level-guidelines`.

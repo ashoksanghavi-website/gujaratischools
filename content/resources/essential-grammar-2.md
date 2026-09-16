@@ -1,5 +1,5 @@
 ---
-title: "Essential Grammar – 2"
+title: "Essential Grammar, 2"
 description: "New A Level guidance. File: Essential Grammar."
 audience: [Teachers]
 type: Exam Specifications
@@ -12,4 +12,4 @@ date: 2020-01-01
 source: new-a-level-spec-and-sam
 tags: [Exam Specifications, A Level]
 ---
-Essential Grammar – 2 — part of New A Level guidance. Migrated from the previous CGS website page `/new-a-level-spec-and-sam`.
+Essential Grammar, 2, part of New A Level guidance. Migrated from the previous CGS website page `/new-a-level-spec-and-sam`.

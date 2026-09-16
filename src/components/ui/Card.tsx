@@ -56,7 +56,7 @@ export function RhythmGrid({
 }
 
 /* ============================================================
-   Card — equal heights, clamped text, one link target.
+   Card, equal heights, clamped text, one link target.
    The image scales behind a fixed frame so nothing reflows.
    ============================================================ */
 

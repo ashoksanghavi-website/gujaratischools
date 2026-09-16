@@ -13,4 +13,4 @@ date: 2020-01-01
 source: ocr-a-level
 tags: [Exam Specifications, A Level, OCR]
 ---
-Unit F883 listening reading and writing 1 scheme of work and lesson plan booklet — part of OCR A Level specification. Migrated from the previous CGS website page `/ocr-a-level`.
+Unit F883 listening reading and writing 1 scheme of work and lesson plan booklet, part of OCR A Level specification. Migrated from the previous CGS website page `/ocr-a-level`.

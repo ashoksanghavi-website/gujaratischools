@@ -1,5 +1,5 @@
 ---
-title: "Unit A814 – Writing specimen"
+title: "Unit A814, Writing specimen"
 description: "OCR GCSE specification. File: Unit A814 writing specimen."
 audience: [Teachers, Leaders]
 type: Exam Specifications
@@ -13,4 +13,4 @@ date: 2020-01-01
 source: sample-assessment-material-sam
 tags: [Exam Specifications, GCSE, OCR]
 ---
-Unit A814 – Writing specimen — part of OCR GCSE specification. Migrated from the previous CGS website page `/sample-assessment-material-sam`.
+Unit A814, Writing specimen, part of OCR GCSE specification. Migrated from the previous CGS website page `/sample-assessment-material-sam`.

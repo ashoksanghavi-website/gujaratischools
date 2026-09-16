@@ -1,5 +1,5 @@
 ---
-title: "Unit F883 Question paper (Listening, reading and writing) – June 2014"
+title: "Unit F883 Question paper (Listening, reading and writing), June 2014"
 description: "OCR A Level 2014. File: Question paper Unit F883/01 listening reading and writing."
 audience: [Teachers]
 type: Past Papers
@@ -14,4 +14,4 @@ date: 2014-06-01
 source: past-papers-for-2014-session
 tags: [Past Papers, A Level, OCR, 2014]
 ---
-Unit F883 Question paper (Listening, reading and writing) – June 2014 — part of OCR A Level 2014. Migrated from the previous CGS website page `/past-papers-for-2014-session`.
+Unit F883 Question paper (Listening, reading and writing), June 2014, part of OCR A Level 2014. Migrated from the previous CGS website page `/past-papers-for-2014-session`.

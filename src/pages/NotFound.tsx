@@ -27,7 +27,7 @@ export default function NotFound() {
             <h1 className="mt-2 text-h1">That page has moved, or never existed</h1>
             <p className="mt-4 text-lead text-ink-soft">
               The site was rebuilt recently. If you followed an old link or a bookmark, the document
-              you want is almost certainly still here — search for it below.
+              you want is almost certainly still here, search for it below.
             </p>
 
             <form

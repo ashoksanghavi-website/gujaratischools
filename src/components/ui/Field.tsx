@@ -1,7 +1,7 @@
 import { useId, useState } from "react";
 
 /* ============================================================
-   Field — label, control, help and error.
+   Field, label, control, help and error.
    Errors are described in text and tied to the control with
    aria-describedby; colour is never the only signal. The message
    slot is always present so validation never shifts the layout.

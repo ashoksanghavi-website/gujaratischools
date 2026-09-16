@@ -6,7 +6,7 @@ import { resources } from "@/lib/content";
 import { useMotionAllowed } from "@/lib/motion";
 
 /* ============================================================
-   Hero — the signature moment.
+   Hero, the signature moment.
    On load, once: the margin rule draws down the left edge, the
    ruled lines fade in behind, and a Gujarati letter completes
    itself along its handwriting guide lines while the headline

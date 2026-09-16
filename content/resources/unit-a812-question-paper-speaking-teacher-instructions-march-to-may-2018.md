@@ -1,5 +1,5 @@
 ---
-title: "Unit A812 Question paper – Speaking (teacher instructions) – March to May 2018"
+title: "Unit A812 Question paper, Speaking (teacher instructions), March to May 2018"
 description: "OCR GCSE 2018. File: Question paper Unit A802/01 A812 01 A822 01 A832 01 A842 01 speaking teacher instructions."
 audience: [Teachers]
 type: Past Papers
@@ -14,4 +14,4 @@ date: 2018-06-01
 source: past-papers-for-2018-session-ocr-gcse
 tags: [Past Papers, GCSE, OCR, 2018]
 ---
-Unit A812 Question paper – Speaking (teacher instructions) – March to May 2018 — part of OCR GCSE 2018. Migrated from the previous CGS website page `/past-papers-for-2018-session-ocr-gcse`.
+Unit A812 Question paper, Speaking (teacher instructions), March to May 2018, part of OCR GCSE 2018. Migrated from the previous CGS website page `/past-papers-for-2018-session-ocr-gcse`.

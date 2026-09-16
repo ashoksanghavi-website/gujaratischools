@@ -1,5 +1,5 @@
 ---
-title: "A Level Listening – Sample Assessment Material (audio file) Changes in A Levels"
+title: "A Level Listening, Sample Assessment Material (audio file) Changes in A Levels"
 description: "File: New A Levels."
 audience: [Teachers, Leaders]
 type: Exam Information
@@ -11,4 +11,4 @@ date: 2020-01-01
 source: gce-gujarati-a-level
 tags: [Exam Information, A Level]
 ---
-A Level Listening – Sample Assessment Material (audio file) Changes in A Levels. Migrated from the previous CGS website page `/gce-gujarati-a-level`.
+A Level Listening, Sample Assessment Material (audio file) Changes in A Levels. Migrated from the previous CGS website page `/gce-gujarati-a-level`.

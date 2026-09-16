@@ -1,5 +1,5 @@
 ---
-title: "GDPR notes and implementation – example"
+title: "GDPR notes and implementation, example"
 description: "File: GDPR Notes and Implementation Example."
 audience: [Leaders]
 type: Teaching Materials
@@ -10,4 +10,4 @@ date: 2019-01-01
 source: administration-of-a-school
 tags: [Teaching Materials]
 ---
-GDPR notes and implementation – example. Migrated from the previous CGS website page `/administration-of-a-school`.
+GDPR notes and implementation, example. Migrated from the previous CGS website page `/administration-of-a-school`.
