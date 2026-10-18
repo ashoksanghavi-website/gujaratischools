@@ -2,16 +2,13 @@ import { Hero } from "@/sections/Hero";
 import { GrowthModule } from "@/sections/GrowthModule";
 import { WhatWeDo } from "@/sections/WhatWeDo";
 import { MissionBand } from "@/sections/MissionBand";
-import { LatestNews } from "@/sections/LatestNews";
-import { FeaturedResources } from "@/sections/FeaturedResources";
-import { ExamUpdates } from "@/sections/ExamUpdates";
-import { ForParents } from "@/sections/ForParents";
-import { Heritage, Gandhiji } from "@/sections/Heritage";
-import { MembershipStrip } from "@/sections/MembershipStrip";
+import { Heritage } from "@/sections/Heritage";
 import { Seo, organisationJsonLd } from "@/lib/seo";
 
-/* Sections are ordered so the page alternates in layout as well as
-   in colour: full-bleed bands, feature+grid, editorial passage. */
+/* A deliberately lean home page (per the committee's review): the hero,
+   the one "find a school" pathway, what the Consortium does, the aim, and
+   the heritage passage. News/training, resources, exam updates, the parents
+   cards and membership forms now live on their own pages. */
 export default function Home() {
   return (
     <>
@@ -25,13 +22,7 @@ export default function Home() {
       <GrowthModule />
       <WhatWeDo />
       <MissionBand />
-      <LatestNews />
-      <FeaturedResources />
-      <ExamUpdates />
-      <ForParents />
       <Heritage />
-      <Gandhiji />
-      <MembershipStrip />
     </>
   );
 }

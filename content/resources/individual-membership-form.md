@@ -1,12 +1,12 @@
 ---
-title: Individual Membership Form
+title: Individual Membership Form (2026–2028)
 description: Join CGS as an individual teacher, parent or supporter.
 audience: [Teachers, Parents]
 type: Membership Forms
-fileUrl: /documents/2020/08/CGS-Membership-Form-Fill-2020-2022-Individual.pdf
+fileUrl: /documents/2026/CGS-Membership-2026-2028-Individual.pdf
 fileType: PDF
-fileSize: PDF · form-fill
-date: 2020-08-01
+fileSize: 2.0 MB
+date: 2026-01-01
 tags: [Membership, Forms]
 ---
 

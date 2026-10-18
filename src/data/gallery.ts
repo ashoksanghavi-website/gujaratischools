@@ -5,6 +5,8 @@
    public/images/ and add an entry here.
    ============================================================ */
 
+import { galleryGenerated } from "./gallery.generated";
+
 export interface GalleryPhoto {
   src: string;
   w: number;
@@ -15,7 +17,7 @@ export interface GalleryPhoto {
   date: string;
 }
 
-export const gallery: GalleryPhoto[] = [
+const galleryBase: GalleryPhoto[] = [
   {
     src: "/images/uploads/2020/12/Speaking-Endorsement-_-28-November-2020.jpg",
     w: 1200, h: 800,
@@ -113,5 +115,9 @@ export const gallery: GalleryPhoto[] = [
     date: "2019-12-01",
   },
 ];
+
+/* The hand-curated set first, then the full archive import (committee photos,
+   BGMs, training days, the Why-Gujarati campaign). */
+export const gallery: GalleryPhoto[] = [...galleryBase, ...galleryGenerated];
 
 export const galleryEvents = Array.from(new Set(gallery.map((g) => g.event)));

@@ -82,7 +82,7 @@ const pageDocs: SearchDoc[] = [
     kind: "Page",
     title: "Committee",
     description: "The current CGS committee and the previous term.",
-    to: "/about/committee",
+    to: "/about#committee",
     audience: ["Leaders"],
     keywords: "committee trustees chair secretary treasurer",
   },

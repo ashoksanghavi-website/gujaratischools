@@ -26,7 +26,6 @@ export function MissionBand() {
           <p className="mt-5 font-display text-[clamp(1.35rem,2.6vw,2rem)] leading-[1.35] text-ink">
             {mission.aim}
           </p>
-          <p className="mt-6 text-lead text-ink-soft">{mission.secondary}</p>
         </div>
       </div>
     </section>

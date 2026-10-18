@@ -1,13 +1,24 @@
-import { Link } from "react-router-dom";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { about, photos, mission, rulesDoc } from "@/data/site";
 import { PageHero } from "@/components/ui/PageHero";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { ButtonLink } from "@/components/ui/Button";
 import { RuledPaper } from "@/components/motifs/Motifs";
 import { IconDownload } from "@/components/ui/Icons";
+import { CommitteeRosters } from "@/components/committee/CommitteeRosters";
 import { Seo, organisationJsonLd } from "@/lib/seo";
 
 export default function About() {
+  /* Committee lives on this page now; jump to it when linked as /about#committee. */
+  const location = useLocation();
+  useEffect(() => {
+    if (location.hash === "#committee") {
+      const el = document.getElementById("committee");
+      if (el) setTimeout(() => el.scrollIntoView({ behavior: "smooth", block: "start" }), 120);
+    }
+  }, [location.hash]);
+
   return (
     <>
       <Seo
@@ -102,12 +113,25 @@ export default function About() {
           </dl>
 
           <p className="mt-7 text-ink-soft">
-            Meet the people who run it on the{" "}
-            <Link to="/about/committee" className="link-draw font-semibold text-indigo">
-              committee page
-            </Link>
-            .
+            Meet the people who run it in the{" "}
+            <a href="#committee" className="link-draw font-semibold text-indigo">
+              committee
+            </a>{" "}
+            section below.
           </p>
+        </div>
+      </section>
+
+      {/* Committee — merged in from the former /about/committee page. */}
+      <section id="committee" className="section border-t border-rule bg-paper-tint" aria-labelledby="committee-heading">
+        <div className="container-cgs">
+          <h2 id="committee-heading" className="text-h2">The committee</h2>
+          <p className="mt-2 max-w-prose text-ink-soft">
+            The volunteers who run the Consortium, elected by the membership.
+          </p>
+          <div className="mt-8">
+            <CommitteeRosters />
+          </div>
         </div>
       </section>
     </>

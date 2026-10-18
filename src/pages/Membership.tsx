@@ -1,10 +1,11 @@
 import { useState } from "react";
-import { membership, contact, about, social, forms } from "@/data/site";
+import { membership, contact, about, social, forms, payment } from "@/data/site";
 import { PageHero } from "@/components/ui/PageHero";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { ButtonLink } from "@/components/ui/Button";
 import { IconDownload, IconMail } from "@/components/ui/Icons";
 import { EnquiryModal, type EnquiryModalConfig } from "@/components/ui/EnquiryModal";
+import { Gandhiji } from "@/sections/Heritage";
 import { Seo } from "@/lib/seo";
 
 /* The online-application config for each form. Organisation and School
@@ -170,6 +171,66 @@ export default function Membership() {
           </div>
         </div>
       </section>
+
+      {/* Pay your subscription — fees paid directly to the Consortium. */}
+      <section className="section border-t border-rule bg-paper-tint" aria-labelledby="pay">
+        <div className="container-cgs">
+          <SectionHeader
+            id="pay"
+            title="Pay your subscription"
+            intro="Once your form is in, pay your membership fee directly to the Consortium."
+          />
+          <div className="grid gap-5 md:grid-cols-2">
+            {payment.onlineUrl && (
+              <div className="rounded-lg border border-rule bg-paper-raised p-6" style={{ borderTopColor: "var(--marigold)", borderTopWidth: 3 }}>
+                <h3 className="text-h3">Pay online</h3>
+                <p className="mt-2 text-small text-ink-soft">The quickest way — pay securely in a few taps.</p>
+                <a
+                  href={payment.onlineUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-5 inline-flex min-h-[48px] items-center gap-2 rounded-pill bg-marigold px-6 font-semibold text-ink transition-colors duration-fast hover:bg-[color-mix(in_srgb,var(--marigold)_88%,var(--ink))]"
+                >
+                  {payment.onlineLabel}
+                </a>
+              </div>
+            )}
+
+            {payment.bank.accountNumber ? (
+              <div className="rounded-lg border border-rule bg-paper-raised p-6">
+                <h3 className="text-h3">Bank transfer</h3>
+                <dl className="mt-4 grid grid-cols-[auto_1fr] gap-x-5 gap-y-2 text-small">
+                  <dt className="text-ink-soft">Account name</dt>
+                  <dd className="font-semibold text-ink">{payment.bank.name}</dd>
+                  {payment.bank.sortCode && (
+                    <>
+                      <dt className="text-ink-soft">Sort code</dt>
+                      <dd className="tnum font-semibold text-ink">{payment.bank.sortCode}</dd>
+                    </>
+                  )}
+                  <dt className="text-ink-soft">Account number</dt>
+                  <dd className="tnum font-semibold text-ink">{payment.bank.accountNumber}</dd>
+                  <dt className="text-ink-soft">Reference</dt>
+                  <dd className="font-semibold text-ink">{payment.reference}</dd>
+                </dl>
+                <p className="mt-4 text-small text-ink-soft">{payment.note}</p>
+              </div>
+            ) : (
+              <div className="rounded-lg border border-rule bg-paper-raised p-6">
+                <h3 className="text-h3">Payment details</h3>
+                <p className="mt-2 text-small text-ink-soft">
+                  We are finalising online payment. In the meantime, our treasurer,{" "}
+                  {payment.treasurer}, will confirm how to pay your subscription — just ask when you
+                  send your form, or <a href={`mailto:${contact.membershipEmail}`} className="link-draw font-semibold text-indigo">contact the secretary</a>.
+                </p>
+              </div>
+            )}
+          </div>
+        </div>
+      </section>
+
+      {/* The Gandhiji passage on mother tongue — moved here from the home page. */}
+      <Gandhiji />
 
       <EnquiryModal config={active} onClose={() => setActive(null)} />
     </>

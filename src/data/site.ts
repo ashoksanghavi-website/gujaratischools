@@ -3,6 +3,7 @@
    that isn't markdown. Committee, contact details, mission.
    Verbatim client copy is marked; nothing here is invented.
    ============================================================ */
+import { docUrl } from "@/lib/assets";
 
 export const site = {
   name: "Consortium of Gujarati Schools",
@@ -33,11 +34,26 @@ export const social = {
 
 /* Verbatim client copy. */
 export const mission = {
-  aim: "We aim to encourage and inspire our teachers to teach with confidence and intelligence to enable all their students to learn and achieve excellence in Gujarati.",
+  aim: "We aim to encourage and inspire our teachers to teach with confidence and intellect to enable all their students to learn and achieve excellence in Gujarati.",
   secondary: "To be happy and successful is to know who you are.",
   purpose:
     "The Consortium of Gujarati School aims to inspire Gujarati teachers and students, by providing excellent learning resources.",
 };
+
+/* The hero statement, verbatim from the committee's copy. */
+export const hero = {
+  heading: "Inspiring Gujarati teachers and learners",
+  intro:
+    "We provide training for our unqualified teachers of Gujarati. This enables them to deliver excellent lessons which help to raise students' academic performance. Our website provides a great deal of help and support for our teachers, parents and children to enjoy their learning and excel in Gujarati.",
+};
+
+/* "What the Consortium does" — the four things, verbatim from the committee. */
+export const fourThings = [
+  "Promote development of all teachers of Gujarati.",
+  "Promote good teaching, learning, leadership and management in Gujarati schools.",
+  "Provide leadership and direction to Gujarati schools and to act as their representative.",
+  "Liaise with MPs, local authorities, examination boards and DfE to improve the quality of provision for Gujarati teaching and learning.",
+];
 
 /* The four themes, with the client's verbatim descriptions. */
 export const themes = [
@@ -148,27 +164,46 @@ export const membership = {
   ],
   forms: [
     {
-      title: "Individual Membership Form",
+      title: "Individual Membership Form (2026–2028)",
       description: "For individual teachers, parents and supporters.",
-      fileUrl: "/documents/2020/08/CGS-Membership-Form-Fill-2020-2022-Individual.pdf",
+      fileUrl: docUrl("/documents/2026/CGS-Membership-2026-2028-Individual.pdf"),
     },
     {
-      title: "Organisation Membership Form",
+      title: "Organisation Membership Form (2026–2028)",
       description: "For Gujarati schools, temples and community organisations.",
-      fileUrl: "/documents/2020/08/CGS-Membership-Form-Fill-2020-2022-Organisation.pdf",
+      fileUrl: docUrl("/documents/2026/CGS-Membership-2026-2028-Organisation.pdf"),
     },
     {
-      title: "School Information Form",
+      title: "School Information Form (September 2027–28)",
       description: "Tell us about your school so we can support you and list you in our network.",
-      fileUrl: "/documents/2020/08/Schools-Info-Form-Formfill-Sep-2020.pdf",
+      fileUrl: docUrl("/documents/2026/Schools-Info-Form-Sept-2027-28.pdf"),
     },
   ],
+};
+
+/* ---------- Subscription payment ----------
+   How members pay their fee "directly to our account". Fill these in when the
+   committee confirms the details; the Membership page shows whatever is set.
+   - onlineUrl: a hosted payment link (Stripe / GoCardless / PayPal / bank link).
+   - bank.*: for a direct bank transfer.
+   Leave a value as "" to hide that part. */
+export const payment = {
+  onlineUrl: "", // e.g. "https://buy.stripe.com/..."
+  onlineLabel: "Pay subscription online",
+  bank: {
+    name: "Consortium of Gujarati Schools",
+    sortCode: "",       // e.g. "00-00-00"
+    accountNumber: "",  // e.g. "12345678"
+  },
+  reference: "Your name (or organisation name)",
+  note: "Please use your name (or your organisation's name) as the payment reference so the treasurer can match it to your membership.",
+  treasurer: "Rekhaben Patel",
 };
 
 /* The governing document, recovered from the live site. */
 export const rulesDoc = {
   title: "CGS Rules, adopted 22 April 2018",
-  fileUrl: "/documents/2019/12/CGS-Rules-adopter-22nd-April-2018.pdf",
+  fileUrl: docUrl("/documents/2019/12/CGS-Rules-adopter-22nd-April-2018.pdf"),
 };
 
 /* ---------- Committee ----------
@@ -267,11 +302,32 @@ export const about = {
    capture submissions without the email-app step, create a free form at
    https://formspree.io and paste its endpoint URL here, the forms will
    POST to it automatically, no other change needed. */
+/* ---------- Online form submissions ----------
+   Completed online forms are emailed to CGS. Until an endpoint is set, every
+   form gracefully falls back to opening the visitor's email app, pre-addressed
+   to the right officer below — so nothing is broken in the meantime.
+
+   To turn on true one-tap sending, use a free form service (no server needed):
+
+   • Web3Forms (web3forms.com): create an access key for the CGS inbox you want
+     submissions to land in, then set:
+         endpoint:  "https://api.web3forms.com/submit"
+         accessKey: "your-web3forms-access-key"
+   • Formspree (formspree.io): create a form and set:
+         endpoint:  "https://formspree.io/f/your-form-id"
+         accessKey: ""   (leave blank)
+
+   Routing to Secretary / Chair / Treasurer: the simplest setup points one key
+   at a shared CGS inbox and the enquiry type is in every subject line. To send
+   each type to a different officer, make a separate key/form per recipient and
+   split `endpoint`/`accessKey` by kind. The *To* addresses below are also used
+   for the email-app fallback. */
 export const forms = {
-  endpoint: "",
-  schoolTo: contact.email,
-  teachTo: contact.membershipEmail,
-  membershipTo: contact.membershipEmail,
+  endpoint: "",   // "" = fall back to the visitor's email app
+  accessKey: "",  // Web3Forms access key (leave blank for Formspree)
+  schoolTo: contact.email,              // Chair
+  teachTo: contact.membershipEmail,     // Secretary
+  membershipTo: contact.membershipEmail, // Secretary
   /* Shown to people who apply online, and the reason online is encouraged. */
   responseNote: "We aim to get back to you within 12 hours.",
 };

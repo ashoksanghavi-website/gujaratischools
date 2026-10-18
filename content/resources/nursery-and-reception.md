@@ -1,13 +1,13 @@
 ---
 title: "Nursery and reception"
-description: "File: Nursery Presentation1 12 Nov201."
+description: "Guidance on teaching Gujarati to nursery and reception children (presentation, 12 Nov 2016)."
 audience: [Teachers, Leaders]
-type: Membership Forms
+type: Teaching Materials
 fileUrl: /documents/2019/12/01-Nursery-Presentation1_12-Nov2016.pdf
 fileType: PDF
 fileSize: 2.6 MB
-date: 2019-01-01
+date: 2016-11-12
 source: teachers-leaders-managers
-tags: [Membership Forms]
+tags: [Teaching Materials, Nursery]
 ---
-Nursery and reception. Migrated from the previous CGS website page `/teachers-leaders-managers`.
+Guidance on teaching Gujarati to nursery and reception children, from a CGS presentation on 12 November 2016. Migrated from the previous CGS website page `/teachers-leaders-managers`.

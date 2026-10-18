@@ -91,7 +91,10 @@ export function EnquiryForm({
           headers: { Accept: "application/json" },
           body: (() => {
             const fd = new FormData();
-            fd.append("_subject", subject);
+            if (forms.accessKey) fd.append("access_key", forms.accessKey); // Web3Forms
+            fd.append("subject", subject);   // Web3Forms
+            fd.append("_subject", subject);  // Formspree
+            fd.append("to", sendTo);         // which officer this is intended for
             if (orgLabel) fd.append(orgLabel.toLowerCase().replace(/\s+/g, "_"), org);
             fd.append("name", name);
             fd.append("email", email);

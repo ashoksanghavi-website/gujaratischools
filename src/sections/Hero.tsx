@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { ButtonLink } from "@/components/ui/Button";
 import { RuledPaper, TracedLetter } from "@/components/motifs/Motifs";
-import { photos, mission } from "@/data/site";
+import { photos, mission, hero } from "@/data/site";
 import { resources } from "@/lib/content";
 import { useMotionAllowed } from "@/lib/motion";
 
@@ -80,12 +80,11 @@ export function Hero() {
             </div>
 
             <h1 id="hero-title" className="text-display" style={step(1)}>
-              Inspiring Gujarati teachers and students
+              {hero.heading}
             </h1>
 
-            <p className="mt-5 max-w-[52ch] text-lead text-ink-soft" style={step(2)}>
-              We train the volunteers who teach Gujarati to children across the UK, and we keep
-              every past paper, training pack and exam specification they need in one place.
+            <p className="mt-5 max-w-[56ch] text-lead text-ink-soft" style={step(2)}>
+              {hero.intro}
             </p>
 
             <div className="mt-7 flex flex-wrap gap-3" style={step(3)}>

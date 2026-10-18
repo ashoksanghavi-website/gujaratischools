@@ -10,7 +10,6 @@ import { redirects } from "@/data/redirects";
 const Home = lazy(() => import("@/pages/Home"));
 const About = lazy(() => import("@/pages/About"));
 const Rules = lazy(() => import("@/pages/Rules"));
-const Committee = lazy(() => import("@/pages/Committee"));
 const Teachers = lazy(() => import("@/pages/Teachers"));
 const Parents = lazy(() => import("@/pages/Parents"));
 const FindSchool = lazy(() => import("@/pages/FindSchool"));
@@ -54,7 +53,8 @@ function AnimatedRoutes() {
           <Route path="/" element={page(<Home />)} />
           <Route path="/about" element={page(<About />)} />
           <Route path="/about/rules" element={page(<Rules />)} />
-          <Route path="/about/committee" element={page(<Committee />)} />
+          {/* Committee is now a section of the About page. */}
+          <Route path="/about/committee" element={<Navigate to="/about#committee" replace />} />
           <Route path="/teachers" element={page(<Teachers />)} />
           <Route path="/parents" element={page(<Parents />)} />
           <Route path="/find-a-school" element={page(<FindSchool />)} />

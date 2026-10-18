@@ -28,11 +28,11 @@ export const redirects: Record<string, string> = {
   "/category/list-of-gujarati-schools": "/find-a-school",
 
   /* ---- committee ---- */
-  "/committee": "/about/committee",
-  "/committee-members-2024-2026": "/about/committee",
-  "/committee-members-2018-2020": "/about/committee",
-  "/commitee-2020-2022": "/about/committee",
-  "/committee-members-2020-2022": "/about/committee",
+  "/committee": "/about#committee",
+  "/committee-members-2024-2026": "/about#committee",
+  "/committee-members-2018-2020": "/about#committee",
+  "/commitee-2020-2022": "/about#committee",
+  "/committee-members-2020-2022": "/about#committee",
   "/rules": "/about/rules",
 
   /* ---- events ---- */

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { themes, photos } from "@/data/site";
+import { themes, photos, fourThings } from "@/data/site";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { resources } from "@/lib/content";
 
@@ -22,6 +22,25 @@ export function WhatWeDo() {
           title="What the Consortium does"
           intro="Four things, and they all point the same way: better teaching, and students who do well in Gujarati."
         />
+
+        {/* The committee's four things, verbatim. */}
+        <ol className="mb-10 grid gap-4 sm:grid-cols-2">
+          {fourThings.map((t, i) => (
+            <li
+              key={i}
+              className="flex gap-4 rounded-md border border-rule bg-paper-raised p-5"
+              style={{ borderLeftColor: "var(--marigold)", borderLeftWidth: 3 }}
+            >
+              <span
+                aria-hidden="true"
+                className="tnum shrink-0 font-display text-[1.5rem] leading-none text-marigold"
+              >
+                {i + 1}
+              </span>
+              <p className="text-ink">{t}</p>
+            </li>
+          ))}
+        </ol>
 
         <div className="grid gap-5 lg:grid-cols-3">
           {/* Feature panel, spans two columns on desktop */}

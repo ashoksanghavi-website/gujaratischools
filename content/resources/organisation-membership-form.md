@@ -1,12 +1,12 @@
 ---
-title: Organisation Membership Form
+title: Organisation Membership Form (2026–2028)
 description: For Gujarati schools, temples and community groups joining CGS as an organisation.
 audience: [Leaders & Managers, Teachers]
 type: Membership Forms
-fileUrl: /documents/2020/08/CGS-Membership-Form-Fill-2020-2022-Organisation.pdf
+fileUrl: /documents/2026/CGS-Membership-2026-2028-Organisation.pdf
 fileType: PDF
-fileSize: PDF · form-fill
-date: 2020-08-01
+fileSize: 11.4 MB
+date: 2026-01-01
 tags: [Membership, Forms, Schools]
 ---
 

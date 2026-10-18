@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { schools, schoolTownCount, countByType } from "@/lib/content";
+import { schools, schoolTownCount } from "@/lib/content";
 import { IconArrow } from "@/components/ui/Icons";
 
 /* ============================================================
@@ -22,18 +22,6 @@ const PATHS = [
     tint: "var(--leaf-soft)",
     stat: `${schools.length} schools · ${schoolTownCount}+ towns`,
   },
-  {
-    key: "teach",
-    kicker: "For parents and volunteers",
-    title: "Teach Gujarati",
-    line: "You don't need to be qualified, we train you.",
-    body: "Most CGS teachers are parents and volunteers. We train you to teach with confidence and give you every lesson resource, free.",
-    to: "/teach",
-    cta: "Become a teacher",
-    accent: "var(--indigo)",
-    tint: "color-mix(in srgb, var(--indigo) 8%, var(--paper))",
-    stat: `${countByType("Training Materials")} training files, free`,
-  },
 ];
 
 export function GrowthModule() {
@@ -45,13 +33,12 @@ export function GrowthModule() {
             Keeping Gujarati alive, one school at a time
           </h2>
           <p className="mt-3 text-lead text-ink-soft">
-            Whether you want your child to learn Gujarati or you'd like to teach it yourself, this is
-            where to start.
+            Find your nearest Gujarati class and take the first step.
           </p>
         </div>
 
-        {/* Two large pathways, an even set, always a clean 2-up. */}
-        <div className="grid gap-5 md:grid-cols-2">
+        {/* The primary pathway: help a family find their nearest class. */}
+        <div className="grid gap-5">
           {PATHS.map((p) => (
             <Link
               key={p.key}

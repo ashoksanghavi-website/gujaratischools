@@ -1,12 +1,12 @@
 ---
-title: School Information Form
+title: School Information Form (September 2027–28)
 description: Tell us about your Gujarati school so we can support you and add you to our network.
 audience: [Leaders & Managers]
 type: Membership Forms
-fileUrl: /documents/2020/08/Schools-Info-Form-Formfill-Sep-2020.pdf
+fileUrl: /documents/2026/Schools-Info-Form-Sept-2027-28.pdf
 fileType: PDF
-fileSize: PDF · form-fill
-date: 2020-09-01
+fileSize: 568 KB
+date: 2027-09-01
 tags: [Membership, Forms, Schools]
 ---
 

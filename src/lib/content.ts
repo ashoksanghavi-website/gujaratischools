@@ -1,4 +1,5 @@
 import { marked } from "marked";
+import { docUrl } from "@/lib/assets";
 
 /* ============================================================
    Markdown content loader.
@@ -191,7 +192,7 @@ export const resources: Resource[] = Object.entries(resourceFiles)
       board: (data.board as string) || undefined,
       year: num(data.year),
       collection: (data.collection as string) || undefined,
-      fileUrl,
+      fileUrl: docUrl(fileUrl),
       fileType: (data.fileType as string) || "Link",
       fileSize: (data.fileSize as string) || undefined,
       date: (data.date as string) || "2020-01-01",

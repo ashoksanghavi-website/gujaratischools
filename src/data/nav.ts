@@ -97,7 +97,7 @@ export const footerExplore: NavItem[] = [
   { label: "Find a school", to: "/find-a-school" },
   { label: "Become a teacher", to: "/teach" },
   { label: "Rules & objects", to: "/about/rules" },
-  { label: "Committee", to: "/about/committee" },
+  { label: "Committee", to: "/about#committee" },
   { label: "News", to: "/news" },
   { label: "Photo gallery", to: "/gallery" },
 ];
